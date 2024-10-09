@@ -22,6 +22,8 @@ h1, h2 {
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
+    color: #f8f9fa;
+    text-shadow: rgb(141, 136, 115) 1px 0 10px;
 }
 #home p {
     font-size: 1.5rem;  /* Taille du texte pour la description */
