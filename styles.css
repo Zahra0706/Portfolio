@@ -31,19 +31,67 @@ h1, h2 {
 
 #formation {
     background-color: #f9f9f9; /* Couleur de fond douce */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Ombre pour un effet de profondeur */
+    padding: 2rem; /* Espacement intérieur */
+}
+
+.formation-item {
+    padding: 20px; /* Espacement intérieur */
+    background-color: #fff; /* Fond blanc pour chaque élément */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre pour profondeur */
+    transition: transform 0.3s; /* Transition pour effet de survol */
+}
+
+.formation-item:hover {
+    transform: translateY(-5px); /* Effet de survol */
+}
+
+.formation-item i {
+    color: #6f42c1; /* Couleur de l'icône */
 }
 
 .formation-item h5 {
     font-size: 1.5rem; /* Taille de police pour le titre */
-    color: #4a4a4a; /* Couleur du texte */
-    margin-bottom: 10px; /* Espacement en bas */
+    color: #333; /* Couleur du texte */
+    margin-top: 10px; /* Espacement en haut */
 }
 
 .formation-item p {
     font-size: 1rem; /* Taille de police pour le texte */
-    color: #6c757d; /* Couleur de texte gris */
+    color: #666; /* Couleur de texte gris */
     margin: 0; /* Suppression de la marge par défaut */
 }
+#skills {
+    background-color: #f9f9f9; /* Couleur de fond douce */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Ombre pour profondeur */
+}
+
+.skill-card {
+    background-color: #fff; /* Fond blanc pour chaque carte */
+    padding: 20px; /* Espacement intérieur */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre pour profondeur */
+    transition: transform 0.3s; /* Transition pour effet de survol */
+    text-align: center; /* Centrer le contenu */
+}
+
+.skill-card:hover {
+    transform: translateY(-5px); /* Effet de survol */
+}
+
+.skill-card i {
+    color: #6f42c1; /* Couleur de l'icône */
+}
+
+.skill-card h5 {
+    font-size: 1.25rem; /* Taille de police pour le titre */
+    color: #333; /* Couleur du texte */
+    margin-top: 10px; /* Espacement en haut */
+}
+
 
 
 #about {
