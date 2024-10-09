@@ -98,8 +98,68 @@ h1, h2 {
     background-color: #f8f9fa;
 }
 
-#projects .card {
-    margin-bottom: 20px;
+/* Card Image Wrapper for Overlay Effect */
+.card-img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img-wrapper img {
+    transition: transform 0.3s ease;
+}
+
+.card-img-wrapper:hover img {
+    transform: scale(1.1);
+}
+
+/* Overlay Style */
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card-img-wrapper:hover .card-overlay {
+    opacity: 1;
+}
+
+/* Card Title in Overlay */
+.card-overlay h5 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Styling for Project Card */
+.project-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-body p {
+    color: #333;
 }
 
 #contact a {
