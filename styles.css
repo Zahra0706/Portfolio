@@ -29,6 +29,23 @@ h1, h2 {
     font-size: 1.5rem;  /* Taille du texte pour la description */
 }
 
+#formation {
+    background-color: #f9f9f9; /* Couleur de fond douce */
+}
+
+.formation-item h5 {
+    font-size: 1.5rem; /* Taille de police pour le titre */
+    color: #4a4a4a; /* Couleur du texte */
+    margin-bottom: 10px; /* Espacement en bas */
+}
+
+.formation-item p {
+    font-size: 1rem; /* Taille de police pour le texte */
+    color: #6c757d; /* Couleur de texte gris */
+    margin: 0; /* Suppression de la marge par défaut */
+}
+
+
 #about {
     background-color: #f8f9fa;
 }
