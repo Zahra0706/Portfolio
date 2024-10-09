@@ -5,6 +5,27 @@ body {
 h1, h2 {
     color: #333;
 }
+ /* Styles pour la page d'accueil */
+ #home {
+    height: 100vh; /* Prend toute la hauteur de l'écran */
+    display: flex;
+    align-items: center; /* Centre verticalement */
+    justify-content: center; /* Centre horizontalement */
+    text-align: center;
+    background: linear-gradient(to right, #8e44ad, #c39bd3); /* Couleur violet pastel */
+    color: white; /* Couleur du texte */
+}
+#home h1 {
+    font-size: 6.5rem; /* Taille du texte pour le nom */
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    background: url('img/background.jpg') no-repeat center center fixed; /* Image de fond */
+    font-style: normal;
+}
+#home p {
+    font-size: 1.5rem;  /* Taille du texte pour la description */
+}
 
 #about {
     background-color: #f8f9fa;
@@ -16,4 +37,14 @@ h1, h2 {
 
 #contact a {
     margin-right: 10px;
+}
+
+ /* Styles pour le footer */
+ footer {
+    background-color: #f8f9fa; /* Couleur de fond gris clair */
+    text-align: center; /* Centre le texte */
+    font-size: 0.8rem; /* Réduit la taille de la police */
+    position: relative; /* Assure que le footer est en bas de la page */
+    bottom: 0; /* Aligne le footer en bas */
+    width: 100%; /* Prend toute la largeur */
 }
