@@ -21,30 +21,34 @@
    
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Zahra Chokri </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#about">À propos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projets</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Compétences</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Zahra Chokri</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">À propos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#formation">Formation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experiences">Expériences</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Compétences</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
+
 
   <!-- Section: Accueil -->
   <section id="home">
@@ -80,46 +84,97 @@
 </section>
 
 
-
-   <!-- Section: Projets -->
-<section id="projects" class="p-5 bg-light">
+<!-- Section: Expériences -->
+<section id="experiences" class="p-5 bg-light">
     <div class="container">
-        <h2 class="text-center mb-4">Mes Projets</h2>
-        <div class="row">
-            <!-- Project 1 -->
-            <div class="col-md-4 mb-4">
-                <div class="card project-card shadow-sm">
-                    <div class="card-img-wrapper">
-                        <img src="img/project1.jpg" class="card-img-top" alt="Project 1">
-                        <div class="card-overlay">
-                            <h5 class="card-title">Application de Messagerie</h5>
+        <h2 class="text-center mb-4">Mes Expériences</h2>
+        
+        <!-- Expériences Professionnelles -->
+        <div class="experience-section mb-5">
+            <h3 class="text-center mb-3">Expériences Professionnelles</h3>
+            <div class="row">
+                <!-- Experience 1 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card experience-card shadow-sm">
+                        <div class="card-body">
+                            <div class="experience-icon">
+                                <i class="fas fa-laptop-code fa-2x"></i> <!-- Icône pour développement -->
+                            </div>
+                            <h5 class="card-title">Stage - OCP (Avril à Mai 2024)</h5>
+                            <p class="card-text">
+                                Développement d’une application web et mobile de messagerie locale dans une entreprise utilisant Ionic.
+                            </p>
                         </div>
                     </div>
-                    <div class="card-body">
-                        <p class="card-text">Développement d'une application de messagerie avec Ionic et Dexie.js pour la gestion des conversations et des groupes.</p>
+                </div>
+                <!-- Experience 2 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card experience-card shadow-sm">
+                        <div class="card-body">
+                            <div class="experience-icon">
+                                <i class="fas fa-globe fa-2x"></i> <!-- Icône pour site web -->
+                            </div>
+                            <h5 class="card-title">Stage - OCP (Juillet 2023)</h5>
+                            <p class="card-text">
+                                Création d’un site web identificatif pour JFC5 en utilisant HTML, CSS, JavaScript, PHP et MySQL.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Project 2 -->
-            <div class="col-md-4 mb-4">
-                <div class="card project-card shadow-sm">
-                    <div class="card-img-wrapper">
-                        <img src="img/project2.jpg" class="card-img-top" alt="Project 2">
-                        <div class="card-overlay">
-                            <h5 class="card-title">Système de Reconnaissance Faciale</h5>
+        </div>
+        
+        <!-- Expériences Académiques -->
+        <div class="experience-section">
+            <h3 class="text-center mb-3">Expériences Académiques</h3>
+            <div class="row">
+                <!-- Academic Experience 1 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card experience-card shadow-sm">
+                        <div class="card-body">
+                            <div class="experience-icon">
+                                <i class="fas fa-camera fa-2x"></i> <!-- Icône pour reconnaissance faciale -->
+                            </div>
+                            <h5 class="card-title">Développement d'une application de reconnaissance faciale</h5>
+                            <p class="card-text">
+                                Utilisation de Python, OpenCV et SQLite comme base de données pour l'implémentation.
+                            </p>
                         </div>
                     </div>
-                    <div class="card-body">
-                        <p class="card-text">Développement d'un système de reconnaissance faciale en temps réel avec l'API Face Recognition et Ionic.</p>
+                </div>
+                <!-- Academic Experience 2 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card experience-card shadow-sm">
+                        <div class="card-body">
+                            <div class="experience-icon">
+                                <i class="fas fa-shopping-cart fa-2x"></i> <!-- Icône pour e-commerce -->
+                            </div>
+                            <h5 class="card-title">Création d’un site e-commerce</h5>
+                            <p class="card-text">
+                                Réalisation d’un site e-commerce en utilisant HTML, CSS, JavaScript, PHP et MySQL.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Academic Experience 3 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card experience-card shadow-sm">
+                        <div class="card-body">
+                            <div class="experience-icon">
+                                <i class="fas fa-code-branch fa-2x"></i> <!-- Icône pour Git -->
+                            </div>
+                            <h5 class="card-title">Mise en œuvre d'une application Java</h5>
+                            <p class="card-text">
+                                Application visant à simplifier les interactions avec Git pour des développeurs.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Add more projects as needed -->
         </div>
     </div>
 </section>
+
 
   <!-- Section: Compétences -->
 <section id="skills" class="p-5 text-center">
