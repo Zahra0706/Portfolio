@@ -12,7 +12,8 @@ h1, h2 {
     align-items: center; /* Centre verticalement */
     justify-content: center; /* Centre horizontalement */
     text-align: center;
-    background: linear-gradient(to right, #8e44ad, #c39bd3); /* Couleur violet pastel */
+    background: url('img/bg.jpeg') no-repeat center center fixed; /* Image de fond */
+
     color: white; /* Couleur du texte */
 }
 #home h1 {
@@ -20,7 +21,6 @@ h1, h2 {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: weight;
-    background: url('img/background.jpg') no-repeat center center fixed; /* Image de fond */
     font-style: normal;
 }
 #home p {
