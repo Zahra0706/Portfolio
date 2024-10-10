@@ -12,7 +12,7 @@ h1, h2 {
     align-items: center; /* Centre verticalement */
     justify-content: center; /* Centre horizontalement */
     text-align: center;
-    background: url('img/bg.jpeg') no-repeat center center fixed; /* Image de fond */
+    background: url('img/bg2.jpeg') no-repeat center center fixed; /* Image de fond */
 
     color: white; /* Couleur du texte */
 }
@@ -23,7 +23,7 @@ h1, h2 {
     font-weight: weight;
     font-style: normal;
     color: #f8f9fa;
-    text-shadow: rgb(141, 136, 115) 1px 0 10px;
+    text-shadow: rgb(109, 108, 101) 1px 0 10px;
 }
 #home p {
     font-size: 1.5rem;  /* Taille du texte pour la description */
@@ -160,6 +160,7 @@ h1, h2 {
 
 }
 
+
 .card-body p {
     color: #333;
 }
@@ -187,6 +188,10 @@ h1, h2 {
 .card-text {
     font-size: 1rem;
     color: #666;
+}
+
+#para{
+    padding-bottom: 25px;
 }
 
 /* Icon Styling */
