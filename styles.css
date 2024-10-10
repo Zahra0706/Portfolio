@@ -35,6 +35,9 @@ h1, h2 {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Ombre pour un effet de profondeur */
     padding: 2rem; /* Espacement intérieur */
 }
+h1.mb-4{
+    font-weight: bold;
+}
 
 .formation-item {
     padding: 20px; /* Espacement intérieur */
@@ -189,7 +192,13 @@ h1, h2 {
     font-size: 1rem;
     color: #666;
 }
-
+h2.mb-4 {
+    font-weight: bold;
+    padding: 10px;
+}
+h3.mb-3 {
+    font-size:1.3rem ;
+}
 #para{
     padding-bottom: 25px;
 }
