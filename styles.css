@@ -5,6 +5,12 @@ body {
 h1, h2 {
     color: #333;
 }
+nav.navbar{
+    background: #f1e7f0;
+}
+nav .nav-link{
+    font-weight: bold;
+}
  /* Styles pour la page d'accueil */
  #home {
     height: 100vh; /* Prend toute la hauteur de l'écran */
