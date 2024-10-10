@@ -6,7 +6,7 @@ h1, h2 {
     color: #333;
 }
 nav.navbar{
-    background: #f1e7f0;
+    background: #f9eded;
 }
 nav .nav-link{
     font-weight: bold;
@@ -66,7 +66,7 @@ h1.mb-4{
 }
 
 .formation-item i {
-    color: #6f42c1; /* Couleur de l'icône */
+    color: #AC87C5; /* Couleur de l'icône */
 }
 
 .formation-item h5 {
@@ -226,6 +226,9 @@ h3.mb-3 {
 
 .experience-icon i {
     font-size: 3rem;
+}
+#experiences{
+    background-color: #AC87C5;
 }
 
 /* Responsive Styling */
