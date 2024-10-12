@@ -243,6 +243,11 @@ h3.mb-3 {
     .experience-card {
         margin-bottom: 20px;
     }
+    #home p {
+        margin-left : 20px;
+        margin-right: 20px;
+    
+    }
 }
 
 #contact a {
