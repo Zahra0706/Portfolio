@@ -13,8 +13,42 @@ nav.navbar{
     text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.611); /* Ombre blanche */
 
 }
+.nav-item {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #333; /* Couleur du texte */
+    transition: color 0.3s ease;
+  }
+  .nav-link.active {
+    text-shadow: 2px 2px 5px rgba(139, 130, 130, 0.611); /* Ombre blanche */
+
+  }
+  
+  .nav-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px; /* Épaisseur du soulignement */
+    background-color: #945ea2; /* Couleur du soulignement */
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-item:hover {
+    color: #945ea2; /* Changer la couleur du texte au survol */
+  }
+  
+  .nav-item:hover::after {
+    width: 100%;
+  }
+  
 nav .nav-link{
     font-weight: bold;
+
 }
  /* Styles pour la page d'accueil */
  #home {
@@ -23,8 +57,8 @@ nav .nav-link{
     align-items: center; /* Centre verticalement */
     justify-content: center; /* Centre horizontalement */
     text-align: center;
-    background: url('img/background.jpg') no-repeat center center fixed; /* Image de fond */
-     background: linear-gradient(rgba(205, 175, 205, 0.437),rgba(209, 162, 210, 0.483)),url('img/background.jpg') no-repeat center center fixed; /* Image de fond */
+     /*background: url('img/background\ \(2\).jpg') no-repeat center center fixed; Image de fond */
+     background: linear-gradient(rgba(205, 175, 205, 0.437),rgba(209, 162, 210, 0.483)),url('img/background.jpg') no-repeat center center ; /* Image de fond */
 
     color: white; /* Couleur du texte */
 }
