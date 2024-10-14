@@ -23,7 +23,7 @@ nav.navbar{
     transition: color 0.3s ease;
   }
   .nav-link.active {
-    text-shadow: 2px 2px 5px rgba(139, 130, 130, 0.611); /* Ombre blanche */
+    text-shadow: 2px 2px 5px rgba(155, 145, 145, 0.611); /* Ombre blanche */
 
   }
   
