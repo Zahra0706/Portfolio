@@ -58,7 +58,7 @@ nav .nav-link{
     justify-content: center; /* Centre horizontalement */
     text-align: center;
      /*background: url('img/background\ \(2\).jpg') no-repeat center center fixed; Image de fond */
-     background: linear-gradient(rgba(205, 175, 205, 0.437),rgba(209, 162, 210, 0.483)),url('img/background.jpg') no-repeat center center ; /* Image de fond */
+     background: linear-gradient(rgba(220, 192, 220, 0.437),rgba(224, 196, 224, 0.437)),url('img/background.jpg') no-repeat center center ; /* Image de fond */
 
     color: white; /* Couleur du texte */
 }
