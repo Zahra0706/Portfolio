@@ -109,7 +109,7 @@ h1.mb-4{
 }
 
 .formation-item:hover {
-    transform: translateY(-5px); /* Effet de survol */
+    transform: translateY(-3px); /* Effet de survol */
 }
 
 .formation-item i {
@@ -144,7 +144,7 @@ h1.mb-4{
 }
 
 .skill-card:hover {
-    transform: translateY(-5px); /* Effet de survol */
+    transform: translateY(-3px); /* Effet de survol */
 }
 
 .skill-card i {
@@ -213,8 +213,9 @@ h1.mb-4{
 }
 
 .project-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+   
 }
 
 .card-body {
@@ -235,12 +236,14 @@ h1.mb-4{
     border-radius: 15px;
     background-color: #fff;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
 
 }
 
 .experience-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+   
 }
 
 /* Styling for Card Titles and Text */
