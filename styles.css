@@ -297,16 +297,18 @@ h3.mb-3 {
 }
 #contact{
     background-color: #ebd6eb;
-
+    padding-top: 50px;
 }
 
  /* Styles pour le footer */
- footer {
+ .footer-para {
     text-align: center; /* Centre le texte */
     font-size: 0.8rem; /* Réduit la taille de la police */
     position: relative; /* Assure que le footer est en bas de la page */
     bottom: 0; /* Aligne le footer en bas */
     width: 100%; /* Prend toute la largeur */
     background-color: #ebd6eb;
+    padding-top: 80px;
+
 
 }
