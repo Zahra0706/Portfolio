@@ -155,7 +155,6 @@ h1.mb-4{
     background-color: #f8f9fa;
 }
 
-/* Card Image Wrapper for Overlay Effect */
 .card-img-wrapper {
     position: relative;
     overflow: hidden;
@@ -169,7 +168,6 @@ h1.mb-4{
     transform: scale(1.1);
 }
 
-/* Overlay Style */
 .card-overlay {
     position: absolute;
     top: 0;
@@ -188,7 +186,6 @@ h1.mb-4{
     opacity: 1;
 }
 
-/* Card Title in Overlay */
 .card-overlay h5 {
     color: white;
     font-size: 1.5rem;
@@ -196,7 +193,6 @@ h1.mb-4{
     text-align: center;
 }
 
-/* Styling for Project Card */
 .project-card {
     border: none;
     border-radius: 15px;
@@ -222,7 +218,6 @@ h1.mb-4{
 .card-body p {
     color: #333;
 }
-/* Styling for Experience Cards */
 .experience-card {
     border: none;
     border-radius: 15px;
@@ -238,7 +233,6 @@ h1.mb-4{
    
 }
 
-/* Styling for Card Titles and Text */
 .card-title {
     font-size: 1.25rem;
     font-weight: bold;
@@ -260,11 +254,10 @@ h3.mb-3 {
     padding-bottom: 25px;
 }
 
-/* Icon Styling */
 .experience-icon {
     text-align: center;
     margin-bottom: 15px;
-    color: #945ea2; /* Violet pastel */
+    color: #945ea2; 
 }
 
 .experience-icon i {
@@ -297,11 +290,11 @@ h3.mb-3 {
 
  /* Styles pour le footer */
  .footer-para {
-    text-align: center; /* Centre le texte */
-    font-size: 0.8rem; /* Réduit la taille de la police */
-    position: relative; /* Assure que le footer est en bas de la page */
-    bottom: 0; /* Aligne le footer en bas */
-    width: 100%; /* Prend toute la largeur */
+    text-align: center; 
+    font-size: 0.8rem; 
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
     background-color: #ebd6eb;
     padding-top: 80px;
 
