@@ -57,15 +57,14 @@ nav .nav-link{
     align-items: center; 
     justify-content: center; 
     text-align: center;
-    background: linear-gradient(rgba(220, 192, 220, 0.437),rgba(224, 196, 224, 0.437)),url('img/background.jpg') no-repeat center center ; /* Image de fond */
-
+    background: linear-gradient(rgba(220, 192, 220, 0.437),rgba(224, 196, 224, 0.437)),url('img/background.jpg') no-repeat center center ; 
+    background-size: cover;
     color: white; 
 }
 #home h1 {
     font-size: 6.5rem; 
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
-    font-weight: weight;
     font-style: normal;
     color: #f8f9fa;
     text-shadow: rgb(109, 108, 101) 1px 0 10px;
@@ -140,11 +139,12 @@ h1.mb-4{
 }
 
 .skill-card i {
-    color: #945ea2;  
+    color: #945ea2; 
+    font-size: 3rem; 
 }
 
 .skill-card h5 {
-    font-size: 1.25rem;  
+    font-size: 0.95rem;  
     color: #333; 
     margin-top: 10px; 
 }
@@ -174,7 +174,7 @@ h1.mb-4{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Dark transparent background */
+    background-color: rgba(0, 0, 0, 0.5); 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -274,9 +274,11 @@ h3.mb-3 {
         margin-bottom: 20px;
     }
     #home p {
-        margin-left : 20px;
-        margin-right: 20px;
-    
+        margin: 0 25px;    
+    }
+    #home h1 {
+        font-size: 5.3rem; 
+        padding-bottom: 20px;
     }
 }
 
