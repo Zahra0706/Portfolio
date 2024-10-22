@@ -16,7 +16,7 @@ nav.navbar{
 .nav-item {
     position: relative;
     display: inline-block;
-    padding: 5px;
+    padding: 5px 12px ;
     font-weight: 500;
     text-decoration: none;
     color: #333; 
@@ -285,6 +285,60 @@ h3.mb-3 {
 #contact a {
     margin-right: 10px;
 }
+.btn-cv {
+    position: relative;
+    background-color: #6b506b;
+    color: #f3ebf3;
+    padding: 10px 25px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-cv::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f3ebf3;
+    z-index: -1;
+    transition: all 0.3s ease;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.btn-cv:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+    
+}
+
+.btn-cv:hover {
+    color: #6b506b;
+    border:solid 1px #6b506b;
+
+}
+.btn-email {
+    color: #6b506b; /* Une couleur de texte plus claire pour le contraste */
+    border: 1px solid #6b506b ;
+    padding: 6px 24px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-email:hover {
+    background-color: #6b506b; /* Un ton mauve plus foncé */
+    color: #ffffff; /* Assurer un bon contraste sur hover */
+}
+
+
 #contact{
     background-color: #ebd6eb;
     padding-top: 50px;
