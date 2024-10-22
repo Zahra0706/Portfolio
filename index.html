@@ -350,16 +350,25 @@
     window.addEventListener('scroll', () => {
       const sections = document.querySelectorAll('section');
       const navLinks = document.querySelectorAll('.nav-link');
-  
+      const contactSection = document.querySelector('#contact'); // Section de contact
+    
       let currentSection = '';
-  
+    
+      // Parcourir les sections pour déterminer laquelle est actuellement visible
       sections.forEach(section => {
         const sectionTop = section.offsetTop;
-        if (window.scrollY >= sectionTop - 50) { 
+        const sectionHeight = section.offsetHeight;
+        if (window.scrollY >= sectionTop - 50 && window.scrollY < sectionTop + sectionHeight - 50) { 
           currentSection = section.getAttribute('id');
         }
       });
-  
+    
+      // Vérifier si l'utilisateur a atteint le bas de la page
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        currentSection = 'contact'; // Assigner manuellement 'contact' si l'utilisateur est au bas de la page
+      }
+    
+      // Gérer la mise à jour des liens de navigation
       navLinks.forEach(link => {
         link.classList.remove('active');
         if (link.getAttribute('href').includes(currentSection)) {
