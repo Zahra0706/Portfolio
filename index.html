@@ -17,6 +17,29 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const animatedItems = document.querySelectorAll('.animated-item');
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.2
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    }, observerOptions);
+
+    animatedItems.forEach(item => {
+        observer.observe(item);
+    });
+});
+
+    </script>
     <style>
     #experiences  .card-body {
         background-color: #f8f3f7 !important;  
@@ -97,21 +120,21 @@
 </section>-->
 
 <!-- Section: Formation -->
-<section id="formation" class="p-5 text-center" >
+<section id="formation" class="p-5 text-center">
     <div class="container">
-        <h1 class="mb-4" style="margin-top: 30px;">Formation</h1> 
-        <div class="formation-item mb-4">
-            <img src="img/graduation-hat-and-diploma-svgrepo-com.svg" style="width: 50px;" > 
-            <h5 class="mt-2">Licence professionnelle (2024- En cours)</h5>
-            <p>Etudiante en Licence Professionnelle en Informatique et Mathématiques Appliquées à  Faculté Polydisciplinaire de Sidi Bennour (FPSB).</p>
+        <h1 class="mb-4 animated-item" style="margin-top: 30px;">Formation</h1> 
+        <div class="formation-item mb-4 animated-item">
+            <img src="img/graduation-hat-and-diploma-svgrepo-com.svg" style="width: 50px;"> 
+            <h5 class="mt-2">Licence professionnelle (2024 - En cours)</h5>
+            <p>Étudiante en Licence Professionnelle en Informatique et Mathématiques Appliquées à la Faculté Polydisciplinaire de Sidi Bennour (FPSB).</p>
         </div>
-        <div class="formation-item mb-4">
+        <div class="formation-item mb-4 animated-item">
             <i class="fas fa-graduation-cap fa-2x" style="font-size: 2.5rem;"></i> 
             <h5 class="mt-2">DUT (2022-2024)</h5>
             <p>Diplôme Universitaire de Technologie en génie informatique à l’École Supérieure de Technologie - Sidi Bennour (ESTSB).</p>
         </div>
-        <div class="formation-item mb-4">
-            <img src="img/college-studying-svgrepo-com.svg" style="width: 50px;" > 
+        <div class="formation-item mb-4 animated-item">
+            <img src="img/college-studying-svgrepo-com.svg" style="width: 50px;"> 
             <h5 class="mt-2">BACCALAURÉAT 2022</h5>
             <p>Baccalauréat en science physique option français, obtenu au lycée Ibn Khaldoun à El Jadida.</p>
         </div>
@@ -122,15 +145,15 @@
 <!-- Section: Expériences -->
 <section id="experiences" class="p-5">
     <div class="container">
-        <h2 class="text-center mb-4" style="margin-top: 30px;">Mes Expériences</h2>
+        <h2 class="text-center mb-4 animated-item" style="margin-top: 30px;">Mes Expériences</h2>
         
         <!-- Expériences Professionnelles -->
         <div class="experience-section mb-5">
-            <h3 class="text-center mb-3">Expériences Professionnelles</h3>
+            <h3 class="text-center mb-3 animated-item">Expériences Professionnelles</h3>
             <div class="row">
                 <!-- Experience 1 -->
-                <div class="col-md-6 mb-4 ">
-                    <div class="card experience-card shadow-sm ">
+                <div class="col-md-6 mb-4 animated-item">
+                    <div class="card experience-card shadow-sm">
                         <div class="card-body">
                             <div class="experience-icon">
                                 <i class="fas fa-laptop-code fa-2x"></i> 
@@ -143,7 +166,7 @@
                     </div>
                 </div>
                 <!-- Experience 2 -->
-                <div class="col-md-6 mb-4">
+                <div class="col-md-6 mb-4 animated-item">
                     <div class="card experience-card shadow-sm">
                         <div class="card-body">
                             <div class="experience-icon">
@@ -158,138 +181,136 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Expériences Académiques -->
         <div class="experience-section">
-            <h3 class="text-center mb-3">Expériences Académiques</h3>
+            <h3 class="text-center mb-3 animated-item">Expériences Académiques</h3>
             <div class="row">
                 <!-- Academic Experience 1 -->
-                <div class="col-md-6 mb-4">
-                    <div class="card experience-card  shadow-sm">
+                <div class="col-md-6 mb-4 animated-item">
+                    <div class="card experience-card shadow-sm">
                         <div class="card-body">
                             <div class="experience-icon">
-                                <img src="img/face-recognition-1-svgrepo-com.svg" style="width: 50px;" >     
+                                <img src="img/face-recognition-1-svgrepo-com.svg" style="width: 50px;">     
                             </div>
                             <h5 class="card-title">Application de reconnaissance faciale (PFE)</h5>
                             <p class="card-text">
-                                Conception et développement d’une application de reconnaissance faciale utilisation Python, OpenCV et SQLite comme base de données.
+                                Conception et développement d’une application de reconnaissance faciale utilisant Python, OpenCV et SQLite.
                             </p>
                         </div>
                     </div>
                 </div>
                 <!-- Academic Experience 2 -->
-                <div class="col-md-6 mb-4">
+                <div class="col-md-6 mb-4 animated-item">
                     <div class="card experience-card shadow-sm">
                         <div class="card-body">
                             <div class="experience-icon">
                                 <i class="fas fa-shopping-cart fa-2x"></i> 
                             </div>
                             <h5 class="card-title">Site e-commerce</h5>
-                            <p  class="card-text" >
+                            <p class="card-text">
                                 Conception et Développement d’un site e-commerce en utilisant HTML, CSS, JavaScript, PHP et MySQL.
                             </p>
                         </div>
                     </div>
                 </div>
-                
             </div>
         </div>
     </div>
 </section>
-
-  <!-- Section: Compétences -->
+<!-- Section: Compétences -->
 <section id="skills" class="p-5 text-center">
     <div class="container">
         <h2 class="mb-4" style="margin-top: 30px;">Mes Compétences</h2>
         <p>Voici quelques technologies et langages avec lesquels je travaille :</p>
         <div class="row">
             <div class="col-md-4 mb-4">
-                <div class="skill-card">
+                <div class="skill-card animated-item">
                     <i class="fab fa-c fa-2x"></i> 
                     <h5>C, C++</h5>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="skill-card">
+                <div class="skill-card animated-item">
                     <i class="fab fa-python fa-2x"></i> 
                     <h5>Python</h5>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="skill-card">
+                <div class="skill-card animated-item">
                     <i class="fab fa-java fa-2x"></i> 
                     <h5>Java</h5>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="skill-card">
+                <div class="skill-card animated-item">
                     <i class="fas fa-code fa-2x"></i>
                     <h5>HTML, CSS, JavaScript</h5>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="skill-card">
+                <div class="skill-card animated-item">
                     <i class="fab fa-php fa-2x"></i> 
                     <h5>PHP</h5>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="skill-card">
+                <div class="skill-card animated-item">
                     <img src="img/logo-ionic-svgrepo-com.svg" style="width: 48px;" >     
                     <h5>Ionic</h5>
                 </div>
             </div>
-             <div class="col-md-4 mb-4">
-                <div class="skill-card">
+            <div class="col-md-4 mb-4">
+                <div class="skill-card animated-item">
                     <img src="img/vb-open-file-symbol-svgrepo-com.svg" style="width: 48px;" > 
                     <h5>VB.NET</h5>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="skill-card">
-                <img src="img/typescript-svgrepo-com.svg" style="width: 48px;" >     
-               <h5>TypeScript</h5>
+                <div class="skill-card animated-item">
+                    <img src="img/typescript-svgrepo-com.svg" style="width: 48px;" >     
+                   <h5>TypeScript</h5>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="skill-card">
+                <div class="skill-card animated-item">
                     <i class="fas fa-database fa-2x"></i> 
                     <h5>MySQL, Oracle</h5>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="skill-card">
+                <div class="skill-card animated-item">
                     <i class="fas fa-network-wired fa-2x"></i> 
                     <h5>Réseaux informatique</h5>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="skill-card">
+                <div class="skill-card animated-item">
                     <img src="img/diagram.png" style="width: 48px;" > 
                     <h5>MERISE, UML</h5>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="skill-card">
+                <div class="skill-card animated-item">
                     <i class="fab fa-github fa-2x"></i>
-                    <h5>Git,GitHub</h5>
+                    <h5>Git, GitHub</h5>
                 </div>
             </div>
             
             <div class="col-md-4 mb-4">
-                <div class="skill-card">
+                <div class="skill-card animated-item">
                     <i class="fas fa-file-word fa-2x"></i> 
                     <h5>Microsoft Word</h5>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="skill-card">
+                <div class="skill-card animated-item">
                     <i class="fas fa-file-powerpoint fa-2x"></i> 
                     <h5>Microsoft PowerPoint</h5>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="skill-card">
+                <div class="skill-card animated-item">
                     <i class="fas fa-file-excel fa-2x"></i> 
                     <h5>Microsoft Excel</h5>
                 </div>
@@ -297,6 +318,7 @@
         </div>
     </div>
 </section>
+
 
     <!-- Section: Contact -->
 <section id="contact" class="p-5  text-center" >

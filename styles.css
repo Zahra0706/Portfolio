@@ -264,6 +264,32 @@ h3.mb-3 {
     background-color: #ebd6eb;
     
 }
+/* Animation fade-in with slide-up */
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Masquer par défaut */
+  .animated-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  /* Classe d'activation */
+  .animated-item.active {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeInUp 1s ease forwards;
+  }
+    
 
 /* Responsive Styling */
 @media (max-width: 768px) {
