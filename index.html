@@ -19,25 +19,25 @@
     <link rel="stylesheet" href="styles.css">
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-    const animatedItems = document.querySelectorAll('.animated-item');
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.2
-    };
+        const animatedItems = document.querySelectorAll('.animated-item');
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.2
+        };
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-            }
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        animatedItems.forEach(item => {
+            observer.observe(item);
         });
-    }, observerOptions);
-
-    animatedItems.forEach(item => {
-        observer.observe(item);
     });
-});
 
     </script>
     <style>
