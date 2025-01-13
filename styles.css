@@ -141,12 +141,17 @@ h1.mb-4{
 .skill-card i {
     color: #945ea2; 
     font-size: 3rem; 
+    padding-bottom: 10px;
 }
 
 .skill-card h5 {
     font-size: 0.95rem;  
     color: #333; 
     margin-top: 10px; 
+}
+.skill-card img{
+    padding-bottom: 10px;
+
 }
 
 
