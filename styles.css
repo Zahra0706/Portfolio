@@ -301,7 +301,7 @@ h3.mb-3 {
     
 
 /* Responsive Styling */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .experience-card {
         margin-bottom: 20px;
     }
