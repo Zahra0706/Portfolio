@@ -273,7 +273,6 @@ h3.mb-3 {
     
 }
 
-/* Animation fade-in with slide-up */
 @keyframes fadeInUp {
     0% {
       opacity: 0;
@@ -285,14 +284,12 @@ h3.mb-3 {
     }
   }
   
-  /* Masquer par défaut */
   .animated-item {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
   }
   
-  /* Classe d'activation */
   .animated-item.active {
     opacity: 1;
     transform: translateY(0);
@@ -314,8 +311,8 @@ h3.mb-3 {
             .nav-item {
             position: relative;
             display: inline-block; 
-            text-decoration: none; /* Assurez-vous qu'il n'y a pas de soulignement */
-            padding: 10px 12px; /* Ajustez le padding selon vos besoins */
+            text-decoration: none; 
+            padding: 10px 12px; 
         }
         
         .nav-link {
@@ -324,17 +321,17 @@ h3.mb-3 {
             text-decoration: none;
             color: #333; 
             transition: color 0.3s ease;
-            border-top: 2px solid transparent; /* Bordure en haut */
-            border-bottom: 2px solid transparent; /* Bordure en bas */
+            border-top: 2px solid transparent; 
+            border-bottom: 2px solid transparent;
         }
         
         .nav-item:hover .nav-link {
             color: #945ea2; 
-            border-top-color: #945ea2; /* Couleur de la bordure du haut au survol */
-            border-bottom-color: #945ea2; /* Couleur de la bordure du bas au survol */
+            border-top-color: #945ea2;
+            border-bottom-color: #945ea2;
         }
         .nav-item::after {
-            display: none; /* Élimine la ligne en dessous */
+            display: none; 
         }
 }
 
@@ -382,7 +379,7 @@ h3.mb-3 {
 
 }
 .btn-email {
-    color: #6b506b; /* Une couleur de texte plus claire pour le contraste */
+    color: #6b506b; 
     border: 1px solid #6b506b ;
     padding: 6px 24px;
     border-radius: 5px;
@@ -390,8 +387,8 @@ h3.mb-3 {
 }
 
 .btn-email:hover {
-    background-color: #6b506b; /* Un ton mauve plus foncé */
-    color: #ffffff; /* Assurer un bon contraste sur hover */
+    background-color: #6b506b; 
+    color: #ffffff; 
 }
 
 
@@ -400,7 +397,7 @@ h3.mb-3 {
     padding-top: 50px;
 }
 
- /* Styles pour le footer */
+
  .footer-para {
     text-align: center; 
     font-size: 0.8rem; 
