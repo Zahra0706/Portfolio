@@ -2,20 +2,20 @@ body {
     font-family: 'Arial', sans-serif;
 }
 *::selection{
-    background-color: #dab1e4;
+    background-color:rgb(162, 170, 218);
 }
 
 h1, h2 {
     color: #333;
 }
 nav.navbar{
-    background: #eddeef;
-    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.611); 
+    background:rgb(222, 227, 239);
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.61); 
 
 }
 
   .nav-link.active {
-    text-shadow: 2px 2px 5px rgba(155, 145, 145, 0.611); 
+    text-shadow: 2px 2px 5px rgba(145, 145, 155, 0.61); 
 
   }
   .nav-item {
@@ -33,7 +33,7 @@ nav.navbar{
     position: absolute;
     width: 0; /* Initialement caché */
     height: 2px;
-    background-color: #945ea2; 
+    background-color: #3C7BA4; 
     bottom: 0;
     left: 50%; /* Centrer horizontalement */
     transform: translateX(-50%); /* Ajuster pour centrer complètement */
@@ -41,7 +41,7 @@ nav.navbar{
 }
 
 .nav-item:hover {
-    color: #945ea2; 
+    color: #3C7BA4; 
 }
 
 .nav-item:hover::after {
@@ -59,7 +59,7 @@ nav .nav-link{
     align-items: center; 
     justify-content: center; 
     text-align: center;
-    background: linear-gradient(rgba(220, 192, 220, 0.437),rgba(224, 196, 224, 0.437)),url('img/background.jpg') no-repeat center center ; 
+    background: linear-gradient(rgba(192, 196, 220, 0.44),rgba(196, 202, 224, 0.44)),url('img/background.jpg') no-repeat center center ; 
     background-size: cover;
     color: white; 
 }
@@ -82,7 +82,7 @@ nav .nav-link{
     font-size: 40px;
 }
 #formation {
-    background-color: #f9f9f9;
+    background-color:rgb(249, 249, 249);
     border-radius: 10px; 
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
     padding: 1rem 2rem; 
@@ -95,7 +95,7 @@ h1.mb-4{
 
 .formation-item {
     padding: 20px; 
-    background-color: #ebd6eb;
+    background-color: #E2EDF3;
     border-radius: 8px; 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s; 
@@ -106,7 +106,7 @@ h1.mb-4{
 }
 
 .formation-item i {
-    color: #945ea2; 
+    color: #3C7BA4; 
 }
 
 .formation-item h5 {
@@ -122,13 +122,13 @@ h1.mb-4{
     margin: 0; 
 }
 #skills {
-    background-color: #f9f9f9;
+    background-color: rgb(249, 249, 249);
     border-radius: 10px; 
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
 }
 
 .skill-card {
-    background-color: #ebd6eb;
+    background-color: #E2EDF3;
     padding: 20px; 
     border-radius: 8px; 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
@@ -141,7 +141,7 @@ h1.mb-4{
 }
 
 .skill-card i {
-    color: #945ea2; 
+    color: #3C7BA4; 
     font-size: 3rem; 
     padding-bottom: 10px;
 }
@@ -213,7 +213,7 @@ h1.mb-4{
    
 }
 
-.card-body {
+.card-bod {
     background-color: #fff;
     padding: 20px;
     text-align: center;
@@ -222,7 +222,7 @@ h1.mb-4{
 }
 
 
-.card-body p {
+.card-bod p {
     color: #333;
 }
 .experience-card {
@@ -262,14 +262,14 @@ h3.mb-3 {
 .experience-icon {
     text-align: center;
     margin-bottom: 15px;
-    color: #945ea2; 
+    color: #3C7BA4; 
 }
 
 .experience-icon i {
     font-size: 3rem;
 }
 #experiences{
-    background-color: #ebd6eb;
+    background-color: #E2EDF3;
     
 }
 
@@ -326,9 +326,9 @@ h3.mb-3 {
         }
         
         .nav-item:hover .nav-link {
-            color: #945ea2; 
-            border-top-color: #945ea2;
-            border-bottom-color: #945ea2;
+            color: #3C7BA4; 
+            border-top-color: #3C7BA4;
+            border-bottom-color: #3C7BA4;
         }
         .nav-item::after {
             display: none; 
@@ -340,8 +340,8 @@ h3.mb-3 {
 }
 .btn-cv {
     position: relative;
-    background-color: #6b506b;
-    color: #f3ebf3;
+    background-color:#3C7BA4;
+    color:rgb(235, 236, 243);
     padding: 10px 25px;
     border: 1px solid transparent;
     border-radius: 5px;
@@ -360,7 +360,7 @@ h3.mb-3 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #f3ebf3;
+    background:rgb(235, 238, 243);
     z-index: -1;
     transition: all 0.3s ease;
     transform: scaleX(0);
@@ -374,26 +374,26 @@ h3.mb-3 {
 }
 
 .btn-cv:hover {
-    color: #6b506b;
-    border:solid 1px #6b506b;
+    color:#3C7BA4;
+    border:solid 1px #3C7BA4;
 
 }
 .btn-email {
-    color: #6b506b; 
-    border: 1px solid #6b506b ;
+    color: #3C7BA4; 
+    border: 1px solid #3C7BA4 ;
     padding: 6px 24px;
     border-radius: 5px;
     transition: all 0.3s ease;
 }
 
 .btn-email:hover {
-    background-color: #6b506b; 
+    background-color: #3C7BA4; 
     color: #ffffff; 
 }
 
 
 #contact{
-    background-color: #ebd6eb;
+    background-color: #E2EDF3;
     padding-top: 50px;
 }
 
@@ -404,7 +404,7 @@ h3.mb-3 {
     position: relative; 
     bottom: 0; 
     width: 100%; 
-    background-color: #ebd6eb;
+    background-color: #E2EDF3;
     padding-top: 80px;
 
 
