@@ -9,27 +9,7 @@ Passionnée par le développement web, je conçois des applications performantes
 
 ## 🛠️ Technologies utilisées
 
-### 💻 Langages de programmation
-- C, C++, Python, Java, PHP, VB.NET, TypeScript, JavaScript
-
-### 🌐 Développement web & mobile
-- HTML, CSS, Tailwind CSS, Bootstrap, Laravel, Ionic, Angular
-
-### 🧠 Data & calcul scientifique
-- MATLAB
-
-### 🗃️ Bases de données
-- MySQL, Oracle, MongoDB
-
-### ⚙️ Outils & environnements
-- Git, GitHub, Microsoft Word, PowerPoint, Excel
-
-### 🛡️ Administration systèmes et réseaux
-- Configuration réseaux, protocoles, VLAN, routage, etc.
-
-### 📐 Modélisation
-- UML, MERISE
-
+- HTML, CSS, Bootstrap, JavaScript
 
 ## 📁 Contenu du dépôt
 
