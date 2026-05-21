@@ -1,385 +1,439 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHOKRI Zahra</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zahra Chokri - Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
 
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <link rel="shortcut icon" href="img/logo_circle.png">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-        const animatedItems = document.querySelectorAll('.animated-item');
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.2
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                }
-            });
-        }, observerOptions);
-
-        animatedItems.forEach(item => {
-            observer.observe(item);
-        });
-    });
-    </script>
-    <style>
-    #experiences  .card-body {
-        background-color: #f8f3f7 !important;  
-    }  
-    @media (max-width: 768px) {
-        .nav-item::after {
-            display: none; 
-        }
-}
-
-    </style>
 </head>
 <body>
 
-    <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="img/logo.jpg" alt="Logo" class="rounded-circle" style="width: 50px; height: 50px; border: solid 2px #ebd6eb;">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#home">
-                        <i class="fas fa-home"></i> Accueil
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#formation">
-                        <i class="fas fa-graduation-cap"></i> Formation
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#experiences">
-                        <i class="fas fa-briefcase"></i> Expériences
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills">
-                        <i class="fas fa-laptop-code"></i> Compétences
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">
-                        <i class="fas fa-envelope"></i> Contact
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+
+<!-- NAV -->
+<nav>
+    <a class="navbar-brand" href="#">
+        <img src="img/circle_logo.png" alt="Logo" style="width: 60px; height: 60px; ">
+    </a>
+    <ul class="nav-links">
+        <li><a href="#about">about</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#experience">experience</a></li>
+        <li><a href="#contact">contact</a></li>
+    </ul>
 </nav>
 
-  <!-- Section: Accueil -->
-  <section id="home">
-    <div class="parahome">
-        <h1>CHOKRI Zahra </h1>
-        <p>Etudiante en Licence Professionnelle en Informatique et Mathématiques Appliquées - option Informatique à la Faculté Polydisciplinaire de Sidi Bennour</p>
+<!-- HERO -->
+<section id="home">
+  <div class="hero-left">
+    <div class="hero-tag">
+      <span class="status-dot"></span>
+      Disponible pour un stage d'été 2025
     </div>
+    <h1 class="hero-name">
+      Zahra
+      <em>Chokri</em>
+    </h1>
+    <p class="hero-desc">
+      Ingénieure en devenir - spécialisée en <strong style="color:var(--text)">Big Data, IA & Cloud Computing</strong> à l'ENSAJ. 
+      Je construis des solutions full-stack, mobiles et data-driven qui ont de l'impact.
+    </p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-primary"><i class="fas fa-rocket"></i> Voir mes projets</a>
+      <a href="#contact" class="btn-ghost"><i class="fas fa-paper-plane"></i> Me contacter</a>
+    </div>
+    <div class="hero-socials">
+      <a href="https://www.linkedin.com/in/zahra-chokri-54419925a" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Zahra0706" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://zahra0706.github.io/Portfolio" target="_blank" title="Portfolio"><i class="fas fa-globe"></i></a>
+      <a href="mailto:zahraechokrii@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-card">
+      <div class="hero-card-label">// statut actuel</div>
+      <div class="hero-card-val">
+        <span class="status-dot"></span> 2ème année cycle ingénieur
+        <small>ENSAJ · El Jadida, Maroc</small>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-label">// domaines de prédilection</div>
+      <div class="skills-mini">
+        <span class="skill-pill">Big Data</span>
+        <span class="skill-pill">Machine Learning</span>
+        <span class="skill-pill">Cloud</span>
+        <span class="skill-pill">Full Stack</span>
+        <span class="skill-pill">Mobile</span>
+        <span class="skill-pill">Data Engineering</span>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-label">// stack principal</div>
+      <div class="skills-mini">
+        <span class="skill-pill">Python</span>
+        <span class="skill-pill">Flutter</span>
+        <span class="skill-pill">React</span>
+        <span class="skill-pill">Laravel</span>
+        <span class="skill-pill">Spark</span>
+        <span class="skill-pill">MongoDB</span>
+        <span class="skill-pill">Docker</span>
+        <span class="skill-pill">Kafka</span>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- Section: Formation -->
-<section id="formation" class="p-5 text-center">
-    <div class="container">
-        <h1 class="mb-4 animated-item" style="margin-top: 10px;"> <i class="fas fa-graduation-cap"></i> Formation</h1> 
-        <div class="formation-item mb-4 animated-item">
-            <img src="img/graduation-hat-and-diploma-svgrepo-com.svg" style="width: 50px;"> 
-            <h5 class="mt-2">Licence professionnelle (2024 - 2025)</h5>
-            <p>Étudiante en Licence Professionnelle en Informatique et Mathématiques Appliquées - option Informatique à la Faculté Polydisciplinaire de Sidi Bennour (FPSB).</p>
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="section-label">about me</div>
+    <h2 class="section-title">Passionnée de tech,<br><span>construite pour innover</span></h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          Je suis <strong>Zahra Chokri</strong>, étudiante en 2ème année du cycle ingénieur en <strong>Ingénierie Informatique et Technologies Émergentes</strong> à l'ENSAJ. Titulaire d'un DUT en Génie Informatique et d'une Licence Professionnelle en IMA, j'ai construit une solide expérience technique sur de multiples fronts.
+        </p>
+        <p>
+          Mon univers tourne autour de l'<strong>intelligence artificielle</strong>, du <strong>Big Data</strong> et du <strong>Cloud Computing</strong> — avec une vraie passion pour transformer des données brutes en solutions concrètes. Du pipeline de données au composant UI, je maîtrise toute la chaîne.
+        </p>
+        <p>
+          En dehors du code, je m'intéresse à la cybersécurité, l'administration réseau sous Linux, et à la modélisation de systèmes complexes (UML, Merise). Je parle <strong>arabe</strong>, <strong>français</strong> et <strong>anglais</strong> couramment.
+        </p>
+        <div class="about-stats">
+          <div class="stat-box">
+            <div class="stat-num">6+</div>
+            <div class="stat-label">projets réalisés</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">3</div>
+            <div class="stat-label">stages effectués</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">15+</div>
+            <div class="stat-label">technos maîtrisées</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">3</div>
+            <div class="stat-label">langues parlées</div>
+          </div>
         </div>
-        <div class="formation-item mb-4 animated-item">
-            <i class="fas fa-graduation-cap fa-2x" style="font-size: 2.5rem;"></i> 
-            <h5 class="mt-2">DUT (2022-2024)</h5>
-            <p>Diplôme Universitaire de Technologie en génie informatique à l’École Supérieure de Technologie - Sidi Bennour (ESTSB).</p>
+      </div>
+
+      <div class="reveal" style="transition-delay:0.15s">
+        <div class="section-label" style="margin-bottom:1.2rem">formation</div>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-line"><div class="tl-dot"></div><div class="tl-connector"></div></div>
+            <div class="tl-year">2025 – présent</div>
+            <div class="tl-content">
+              <h4>Cycle Ingénieur 2ITE</h4>
+              <p>ENSAJ · El Jadida</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-line"><div class="tl-dot" style="background:var(--accent3)"></div><div class="tl-connector"></div></div>
+            <div class="tl-year">2024 – 2025</div>
+            <div class="tl-content">
+              <h4>Licence Pro IMA</h4>
+              <p>FPSB · Sidi Bennour</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-line"><div class="tl-dot" style="background:var(--accent3)"></div><div class="tl-connector"></div></div>
+            <div class="tl-year">2022 – 2024</div>
+            <div class="tl-content">
+              <h4>DUT Génie Informatique</h4>
+              <p>ESTSB · Sidi Bennour</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-line"><div class="tl-dot" style="background:var(--muted)"></div></div>
+            <div class="tl-year">2022</div>
+            <div class="tl-content">
+              <h4>Baccalauréat Sciences Physiques</h4>
+              <p>Lycée Ibn Khaldoun · El Jadida</p>
+            </div>
+          </div>
         </div>
-        <div class="formation-item mb-4 animated-item">
-            <img src="img/college-studying-svgrepo-com.svg" style="width: 50px;"> 
-            <h5 class="mt-2">BACCALAURÉAT 2022</h5>
-            <p>Baccalauréat en science physique option français, obtenu au lycée Ibn Khaldoun à El Jadida.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-inner">
+    <div class="section-label">compétences</div>
+    <h2 class="section-title">Mon <span>arsenal</span> technique</h2>
+    <div class="skills-grid">
+      <div class="skill-group reveal">
+        <div class="skill-group-icon"><i class="fas fa-code"></i></div>
+        <h3>Langages</h3>
+        <div class="skill-tags">
+          <span class="stag">Python</span><span class="stag">Java</span><span class="stag">JavaScript</span>
+          <span class="stag">TypeScript</span><span class="stag">PHP</span><span class="stag">Dart</span>
+          <span class="stag">C / C++</span><span class="stag">Kotlin</span><span class="stag">VB.NET</span>
         </div>
-    </div>
-</section>
-
-<!-- Section: Expériences -->
-<section id="experiences" class="p-5">
-    <div class="container">
-        <h2 class="text-center mb-4 animated-item" style="margin-top: 0px;"> <i class="fas fa-briefcase"></i> Mes Expériences</h2>
-        
-        <div class="row">
-            <!-- Experience 1 -->
-            <div class="col-md-6 mb-4 animated-item">
-                <div class="card experience-card shadow-sm">
-                    <div class="card-body">
-                        <div class="experience-icon">
-                            <i class="fas fa-users fa-2x"></i>
-                        </div>
-                        <h5 class="card-title">InvestMaroc (Décembre 2024)</h5>
-                        <p class="card-text">
-                            Conception et développement d’une plateforme pour connecter les entrepreneurs avec les investisseurs, 
-                            en utilisant HTML, CSS, Bootstrap, JavaScript, PHP et MySQL. 
-                            <a href="https://www.investmaroc.kesug.com" target="_blank" class="text-decoration-none">
-                                Voir le projet
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Experience 2 -->
-            <div class="col-md-6 mb-4 animated-item">
-                <div class="card experience-card shadow-sm">
-                    <div class="card-body">
-                        <div class="experience-icon">
-                            <i class="fas fa-laptop-code fa-2x"></i>
-                        </div>
-                        <h5 class="card-title">Stage technique - OCP (Avril à Mai 2024)</h5>
-                        <p class="card-text">
-                            Conception et développement d’une application web et mobile de messagerie locale pour JFC5 en utilisant Ionic, TypeScript et la base de données Dexie.js.
-                        </p>
-                    </div>
-                </div>
-            </div>  
-
-            <!-- Experience 3 -->
-            <div class="col-md-6 mb-4 animated-item">
-                <div class="card experience-card shadow-sm">
-                    <div class="card-body">
-                        <div class="experience-icon">
-                            <img src="img/face-recognition-1-svgrepo-com.svg" style="width: 50px;">
-                        </div>
-                        <h5 class="card-title">Application de reconnaissance faciale (PFE)</h5>
-                        <p class="card-text">
-                            Conception et développement d’une application de reconnaissance faciale utilisant Python, OpenCV et SQLite.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Experience 4 -->
-            <div class="col-md-6 mb-4 animated-item">
-                <div class="card experience-card shadow-sm">
-                    <div class="card-body">
-                        <div class="experience-icon">
-                            <i class="fas fa-shopping-cart fa-2x"></i>
-                        </div>
-                        <h5 class="card-title">Site e-commerce</h5>
-                        <p class="card-text">
-                            Conception et Développement d’un site e-commerce en utilisant HTML, CSS, JavaScript, PHP et MySQL.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Experience 5 -->
-            <div class="col-md-6 mx-auto mb-4 animated-item">
-                <div class="card experience-card shadow-sm">
-                    <div class="card-body">
-                        <div class="experience-icon">
-                            <i class="fas fa-globe fa-2x"></i>
-                        </div>
-                        <h5 class="card-title">Stage d’initiation - OCP (Juillet 2023)</h5>
-                        <p class="card-text">
-                            Développement d’un site web identificatif pour JFC5 en utilisant HTML, CSS, JavaScript, PHP et MySQL.
-                        </p>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="skill-group reveal" style="transition-delay:0.1s">
+        <div class="skill-group-icon"><i class="fas fa-mobile-alt"></i></div>
+        <h3>Mobile & Frontend</h3>
+        <div class="skill-tags">
+          <span class="stag">Flutter</span><span class="stag">React Native</span><span class="stag">React</span>
+          <span class="stag">Angular</span><span class="stag">Ionic</span><span class="stag">TailwindCSS</span>
+          <span class="stag">Bootstrap</span>
         </div>
+      </div>
+      <div class="skill-group reveal" style="transition-delay:0.2s">
+        <div class="skill-group-icon"><i class="fas fa-server"></i></div>
+        <h3>Backend & Bases de données</h3>
+        <div class="skill-tags">
+          <span class="stag">Laravel</span><span class="stag">Node.js</span><span class="stag">Spring Boot</span>
+          <span class="stag">Django</span><span class="stag">MySQL</span><span class="stag">PostgreSQL</span>
+          <span class="stag">MongoDB</span><span class="stag">Oracle</span><span class="stag">Firebase</span>
+        </div>
+      </div>
+      <div class="skill-group reveal" style="transition-delay:0.3s">
+        <div class="skill-group-icon"><i class="fas fa-brain"></i></div>
+        <h3>Big Data & IA</h3>
+        <div class="skill-tags">
+          <span class="stag">Apache Spark</span><span class="stag">Kafka</span><span class="stag">Hive</span>
+          <span class="stag">TensorFlow</span><span class="stag">OpenCV</span><span class="stag">ML / DL / RL</span>
+          <span class="stag">Data Engineering</span><span class="stag">BI</span>
+        </div>
+      </div>
+      <div class="skill-group reveal" style="transition-delay:0.4s">
+        <div class="skill-group-icon"><i class="fas fa-cloud"></i></div>
+        <h3>Cloud & DevOps</h3>
+        <div class="skill-tags">
+          <span class="stag">Docker</span><span class="stag">ElasticSearch</span><span class="stag">Kibana</span>
+          <span class="stag">Git / GitHub</span><span class="stag">Linux</span><span class="stag">Cloud Computing</span>
+          <span class="stag">Cybersécurité</span>
+        </div>
+      </div>
+      <div class="skill-group reveal" style="transition-delay:0.5s">
+        <div class="skill-group-icon"><i class="fas fa-drafting-compass"></i></div>
+        <h3>Conception & Méthodes</h3>
+        <div class="skill-tags">
+          <span class="stag">UML</span><span class="stag">MERISE</span><span class="stag">MATLAB</span>
+          <span class="stag">Réseaux Linux</span><span class="stag">DHCP / DNS</span><span class="stag">VLAN</span>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
-<!-- Section: Compétences -->
-<section id="skills" class="p-5 text-center">
-    <div class="container">
-        <h2 class="mb-4" style="margin-top: 0px;"><i class="fas fa-laptop-code"></i> Mes Compétences</h2>
-        <p>Voici quelques technologies et langages avec lesquels je travaille :</p>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="skill-card animated-item">
-                    <i class="fab fa-c fa-2x"></i> 
-                    <h5>C, C++</h5>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="skill-card animated-item">
-                    <i class="fab fa-python fa-2x"></i> 
-                    <h5>Python</h5>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="skill-card animated-item">
-                    <i class="fab fa-java fa-2x"></i> 
-                    <h5>Java</h5>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="skill-card animated-item">
-                    <i class="fas fa-code fa-2x"></i>
-                    <h5>HTML, CSS, Bootstrap, JavaScript</h5>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="skill-card animated-item">
-                    <i class="fab fa-php fa-2x"></i> 
-                    <h5>PHP</h5>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="skill-card animated-item">
-                    <img src="img/vb-open-file-symbol-svgrepo-com.svg" style="width: 48px;" > 
-                    <h5>VB.NET</h5>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="skill-card animated-item">
-                    <img src="img/logo-ionic-svgrepo-com.svg" style="width: 48px;" >     
-                    <h5>Ionic</h5>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="skill-card animated-item">
-                    <img src="img/typescript-svgrepo-com.svg" style="width: 48px;" >     
-                   <h5>TypeScript</h5>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="skill-card animated-item">
-                    <i class="fab fa-angular fa-2x"></i>
-                    <h5>Angular</h5>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="skill-card animated-item">
-                    <img src="img/matlab.svg" style="width: 48px;" alt="MATLAB">
-                    <h5>MATLAB</h5>
-                </div>
-            </div>            
-            <div class="col-md-4 mb-4">
-                <div class="skill-card animated-item">
-                    <i class="fas fa-database fa-2x"></i> 
-                    <h5>MySQL, Oracle, MongoDB</h5>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="skill-card animated-item">
-                    <i class="fas fa-network-wired fa-2x"></i> 
-                    <h5>Administration systèmes et réseaux </h5>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="skill-card animated-item">
-                    <i class="fab fa-github fa-2x"></i>
-                    <h5>Git, GitHub</h5>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="skill-card animated-item">
-                    <img src="img/diagram.png" style="width: 48px;">
-                    <h5>MERISE, UML</h5>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="skill-card animated-item">
-                    <img src="img/microsoft-365.svg" style="width: 48px;">
-                    <h5>Microsoft Word, PowerPoint, Excel</h5>
-                </div>
-            </div>
-        </div>        
-    </div>  
-</section>
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-inner">
+    <div class="section-label">projets</div>
+    <h2 class="section-title">Ce que j'ai <span>construit</span></h2>
+    <div class="projects-grid">
 
-<!-- Section: Contact -->
-<section id="contact" class="p-1  text-center" >
-    <div class="container">
-        <h2 class="mb-4" style="margin-top: 30px;"> Me Contacter</h2>
-        <p style="padding-top: 40px;">N'hésite pas à me contacter via les liens ci-dessous :</p>
-        
-        <!-- Bouton pour Email -->
-        <a href="mailto:zahraechokrii@gmail.com" class="btn btn-email m-2" >
-            <i class="fas fa-envelope"></i> Envoyer un Email
-        </a>
-        
-        <!-- Bouton pour LinkedIn -->
-        <a href="https://www.linkedin.com/in/zahra-chokri-54419925a/" class="btn btn-outline-secondary m-2">
-            <i class="fab fa-linkedin"></i> LinkedIn
-        </a>
-        
-        <!-- Bouton pour GitHub -->
-        <a href="https://github.com/Zahra0706" class="btn btn-outline-dark m-2">
-            <i class="fab fa-github"></i> GitHub
-        </a>
+      <!-- Featured -->
+      <div class="project-card featured reveal">
+        <div class="project-body">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-car"></i></div>
+            <span class="project-arrow"><i class="fas fa-arrow-up-right-from-square"></i></span>
+          </div>
+          <div class="project-title">VIGGO</div>
+          <p class="project-desc">Application mobile intelligente de <strong style="color:var(--text)">surveillance du conducteur</strong> en temps réel. Détection de fatigue et d'inattention via computer vision, alertes instantanées pour améliorer la sécurité routière.</p>
+          <div class="project-stack">
+            <span class="pstack">Flutter</span>
+            <span class="pstack">Node.js</span>
+            <span class="pstack">MongoDB</span>
+          </div>
+        </div>
+        <div class="feat-visual">
+<span class="kw">import</span> tensorflow <span class="kw">as</span> tf<br>
+<span class="kw">import</span> cv2<br><br>
+<span class="kw">class</span> <span class="fn">DriverMonitor</span>:<br>
+&nbsp;&nbsp;<span class="kw">def</span> <span class="fn">detect_fatigue</span>(self, frame):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;landmarks = self.<span class="fn">face_mesh</span>(frame)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ear = self.<span class="fn">eye_aspect_ratio</span>(landmarks)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">if</span> ear &lt; <span class="str">0.25</span>:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fn">alert</span>(<span class="str">"FATIGUE DETECTED"</span>)
+        </div>
+      </div>
+
+      <div class="project-card reveal" style="transition-delay:0.1s">
+        <div class="project-header">
+          <div class="project-icon"><i class="fas fa-shield-halved"></i></div>
+          <span class="project-arrow"><i class="fas fa-arrow-up-right-from-square"></i></span>
+        </div>
+        <div class="project-title">NoSQL Schema Inspector</div>
+        <p class="project-desc">Outil d'<strong style="color:var(--text)">audit de sécurité & visualisation</strong> pour bases NoSQL. Détection de vulnérabilités schématiques et génération de rapports détaillés.</p>
+        <div class="project-stack">
+          <span class="pstack">Python</span>
+          <span class="pstack">MongoDB</span>
+          <span class="pstack">Firebase</span>
+          <span class="pstack">Couche DB</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal" style="transition-delay:0.2s">
+        <div class="project-header">
+          <div class="project-icon"><i class="fas fa-handshake"></i></div>
+          <span class="project-arrow"><i class="fas fa-arrow-up-right-from-square"></i></span>
+        </div>
+        <div class="project-title">InvestMaroc</div>
+        <p class="project-desc">Plateforme de mise en relation <strong style="color:var(--text)">entrepreneurs ↔ investisseurs</strong> au Maroc. Smart matching, showcase de projets. Hackathon FPSB — Déc. 2024.</p>
+        <div class="project-stack">
+          <span class="pstack">React</span>
+          <span class="pstack">Laravel</span>
+          <span class="pstack">MySQL</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal" style="transition-delay:0.3s">
+        <div class="project-header">
+          <div class="project-icon"><i class="fas fa-face-smile"></i></div>
+          <span class="project-arrow"><i class="fas fa-arrow-up-right-from-square"></i></span>
+        </div>
+        <div class="project-title">Reconnaissance Faciale</div>
+        <p class="project-desc">Application de <strong style="color:var(--text)">reconnaissance faciale</strong> temps réel avec gestion de base de données intégrée. Projet de fin d'études DUT.</p>
+        <div class="project-stack">
+          <span class="pstack">Python</span>
+          <span class="pstack">OpenCV</span>
+          <span class="pstack">SQLite</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal" style="transition-delay:0.4s">
+        <div class="project-header">
+          <div class="project-icon"><i class="fas fa-message"></i></div>
+          <span class="project-arrow"><i class="fas fa-arrow-up-right-from-square"></i></span>
+        </div>
+        <div class="project-title">App Messagerie Locale</div>
+        <p class="project-desc">Application web & mobile de <strong style="color:var(--text)">messagerie interne</strong> développée lors du stage OCP (JFC5). Fonctionnement hors-ligne first.</p>
+        <div class="project-stack">
+          <span class="pstack">Ionic</span>
+          <span class="pstack">TypeScript</span>
+          <span class="pstack">Dexie.js</span>
+        </div>
+      </div>
 
     </div>
-
-
-    <div class="container" style="padding-top: 70px;">
-        <p>Télécharger mon CV :</p>
-        <a href="cv/CV CHOKRI Zahra.pdf" class="btn btn-cv"  download>
-            <i class="fas fa-download"></i> Télécharger CV
-        </a>
-    </div>
-    <div class="footer-para"><p>&copy;2024-2025 CHOKRI Zahra.</p></div>
+  </div>
 </section>
 
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-inner">
+    <div class="section-label">expériences</div>
+    <h2 class="section-title">Mon <span>parcours</span> professionnel</h2>
+    <div class="exp-list">
+      <div class="exp-item reveal">
+        <div class="exp-num">01</div>
+        <div class="exp-content">
+          <h4>Stage PFE — Gestion des réclamations</h4>
+          <p>Conception et développement d'une application web de gestion des réclamations et demandes administratives. Stack : Laravel & MySQL.</p>
+        </div>
+        <div class="exp-org">FPSB<div class="exp-date">Avr – Juin 2025</div></div>
+      </div>
+      <div class="exp-item reveal" style="transition-delay:0.1s">
+        <div class="exp-num">02</div>
+        <div class="exp-content">
+          <h4>Hackathon — InvestMaroc</h4>
+          <p>Développement en équipe d'une plateforme de mise en relation entrepreneurs-investisseurs. HTML, CSS, Bootstrap, JS, PHP, MySQL.</p>
+        </div>
+        <div class="exp-org">FPSB<div class="exp-date">Déc 2024 – Jan 2025</div></div>
+      </div>
+      <div class="exp-item reveal" style="transition-delay:0.2s">
+        <div class="exp-num">03</div>
+        <div class="exp-content">
+          <h4>Stage technique — Application de messagerie locale</h4>
+          <p>Développement d'une application web & mobile de messagerie interne avec Ionic, TypeScript et Dexie.js pour la gestion offline.</p>
+        </div>
+        <div class="exp-org">OCP · JFC5<div class="exp-date">Avr – Mai 2024</div></div>
+      </div>
+      <div class="exp-item reveal" style="transition-delay:0.3s">
+        <div class="exp-num">04</div>
+        <div class="exp-content">
+          <h4>Stage d'initiation — Site web identificatif JFC5</h4>
+          <p>Développement d'un site web identificatif pour JFC5 : HTML, CSS, JavaScript, PHP et MySQL.</p>
+        </div>
+        <div class="exp-org">OCP · JFC5<div class="exp-date">Juil 2023</div></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<!-- JavaScript -->
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="contact-inner">
+      <div class="section-label">contact</div>
+      <h2 class="section-title">Travaillons <span>ensemble</span></h2>
+      <p class="contact-tagline reveal">
+        Je suis activement à la recherche d'un <strong style="color:var(--text)">stage d'été 2025</strong>. N'hésitez pas à me contacter pour discuter de vos projets ou opportunités.
+      </p>
+      <div class="contact-links reveal">
+        <a href="mailto:zahraechokrii@gmail.com" class="contact-link">
+          <i class="fas fa-envelope"></i> zahraechokrii@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/zahra-chokri-54419925a" target="_blank" class="contact-link">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/Zahra0706" target="_blank" class="contact-link">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+      <a href="cv/CV CHOKRI Zahra.pdf" download class="btn-primary reveal" style="margin:0 auto;width:fit-content">
+        <i class="fas fa-download"></i> Télécharger mon CV
+      </a>
+      <div class="footer reveal">
+        <span>© 2026 Zahra Chokri · El Jadida, Maroc</span>
+        <span style="font-family:var(--font-mono);color:var(--accent)">made with &lt;3</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <script>
-    window.addEventListener('scroll', () => {
-      const sections = document.querySelectorAll('section');
-      const navLinks = document.querySelectorAll('.nav-link');
-      const contactSection = document.querySelector('#contact'); // Section de contact
-    
-      let currentSection = '';
-    
-      // Parcourir les sections pour déterminer laquelle est actuellement visible
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.offsetHeight;
-        if (window.scrollY >= sectionTop - 50 && window.scrollY < sectionTop + sectionHeight - 50) { 
-          currentSection = section.getAttribute('id');
-        }
-      });
-    
-      // Vérifier si l'utilisateur a atteint le bas de la page
-      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-        currentSection = 'contact'; // Assigner manuellement 'contact' si l'utilisateur est au bas de la page
-      }
-    
-      // Gérer la mise à jour des liens de navigation
-      navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').includes(currentSection)) {
-          link.classList.add('active');
-        }
-      });
-    });
-  </script>
-  
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+// Cursor
+const cursor = document.getElementById('cursor');
+const ring = document.getElementById('cursor-ring');
+let mx = 0, my = 0, rx = 0, ry = 0;
+document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+function animateCursor() {
+  cursor.style.transform = `translate(${mx-4}px, ${my-4}px)`;
+  rx += (mx - rx) * 0.15; ry += (my - ry) * 0.15;
+  ring.style.transform = `translate(${rx-18}px, ${ry-18}px)`;
+  requestAnimationFrame(animateCursor);
+}
+animateCursor();
+document.querySelectorAll('a,button,.project-card,.skill-group').forEach(el => {
+  el.addEventListener('mouseenter', () => { ring.style.width = ring.style.height = '56px'; });
+  el.addEventListener('mouseleave', () => { ring.style.width = ring.style.height = '36px'; });
+});
+
+// Scroll reveal
+const revealEls = document.querySelectorAll('.reveal');
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+}, { threshold: 0.12 });
+revealEls.forEach(el => obs.observe(el));
+
+// Nav active
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.getAttribute('id'); });
+  navLinks.forEach(a => {
+    a.style.color = a.getAttribute('href') === '#' + current ? 'var(--accent2)' : '';
+  });
+});
+</script>
 </body>
 </html>
