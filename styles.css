@@ -263,6 +263,23 @@ section { position: relative; z-index: 1; }
 
 #skills { background: var(--bg); }
 .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+
+#certifications { background: var(--bg2); }
+.certs-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+.cert-card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 16px; padding: 1.6rem;
+  display: flex; align-items: center; gap: 1.2rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.cert-card:hover { border-color: rgba(124,106,247,0.4); transform: translateY(-4px); }
+.cert-icon {
+  font-size: 1.5rem; width: 44px; height: 44px; border-radius: 10px;
+  background: rgba(124,106,247,0.12); display: flex; align-items: center; justify-content: center;
+  color: var(--accent2); flex-shrink: 0;
+}
+.cert-content h4 { font-family: var(--font-display); font-size: 0.95rem; font-weight: 700; margin-bottom: 4px; }
+.cert-content p { font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); }
 .skill-group {
   background: var(--card); border: 1px solid var(--border);
   border-radius: 16px; padding: 1.6rem;
@@ -290,7 +307,7 @@ section { position: relative; z-index: 1; }
 }
 .skill-group:hover .stag { border-color: rgba(124,106,247,0.25); color: var(--accent2); }
 
-#projects { background: var(--bg2); }
+#projects { background: var(--bg); }
 .projects-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
 .project-card {
   background: var(--card); border: 1px solid var(--border);
@@ -345,7 +362,7 @@ section { position: relative; z-index: 1; }
 .feat-visual .fn { color: var(--accent3); }
 .feat-visual .str { color: #a3e635; }
 
-#experience { background: var(--bg); }
+#experience { background: var(--bg2); }
 .exp-list { display: flex; flex-direction: column; gap: 1.2rem; }
 .exp-item {
   background: var(--card); border: 1px solid var(--border);
@@ -368,7 +385,7 @@ section { position: relative; z-index: 1; }
 }
 .exp-date { font-size: 0.72rem; color: var(--muted); margin-top: 2px; }
 
-#contact { background: var(--bg2); }
+#contact { background: var(--bg); }
 .contact-inner {
   max-width: 700px; margin: 0 auto; text-align: center;
 }
@@ -418,6 +435,7 @@ section { position: relative; z-index: 1; }
   .hero-right { display: none; }
   .about-grid { grid-template-columns: 1fr; gap: 2rem; }
   .skills-grid { grid-template-columns: 1fr 1fr; }
+  .certs-grid { grid-template-columns: 1fr; }
   .projects-grid { grid-template-columns: 1fr; }
   .project-card.featured { grid-column: 1; display: flex; flex-direction: column; }
   .feat-visual { display: none; }
