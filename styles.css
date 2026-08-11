@@ -265,12 +265,50 @@ section { position: relative; z-index: 1; }
 .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
 
 #certifications { background: var(--bg2); }
-.certs-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+.cert-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 2.5rem;
+}
+.cert-filters button {
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 8px 18px;
+  border-radius: 100px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.cert-filters button:hover {
+  border-color: var(--accent2);
+  color: var(--accent2);
+  transform: translateY(-1px);
+}
+.cert-filters button.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+  box-shadow: 0 4px 12px rgba(124, 106, 247, 0.25);
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
 .cert-card {
   background: var(--card); border: 1px solid var(--border);
   border-radius: 16px; padding: 1.6rem;
   display: flex; align-items: center; gap: 1.2rem;
-  transition: border-color 0.2s, transform 0.2s;
+  transition: opacity 0.3s ease, transform 0.3s ease, border-color 0.2s;
+}
+.cert-card.hidden-anim {
+  opacity: 0;
+  transform: scale(0.9) translateY(10px);
 }
 .cert-card:hover { border-color: rgba(124,106,247,0.4); transform: translateY(-4px); }
 .cert-icon {
@@ -435,7 +473,7 @@ section { position: relative; z-index: 1; }
   .hero-right { display: none; }
   .about-grid { grid-template-columns: 1fr; gap: 2rem; }
   .skills-grid { grid-template-columns: 1fr 1fr; }
-  .certs-grid { grid-template-columns: 1fr; }
+  .cert-grid { grid-template-columns: 1fr 1fr; }
   .projects-grid { grid-template-columns: 1fr; }
   .project-card.featured { grid-column: 1; display: flex; flex-direction: column; }
   .feat-visual { display: none; }
@@ -445,5 +483,6 @@ section { position: relative; z-index: 1; }
 }
 @media (max-width: 600px) {
   .skills-grid { grid-template-columns: 1fr; }
+  .cert-grid { grid-template-columns: 1fr; }
   .about-stats { grid-template-columns: 1fr 1fr; }
 }

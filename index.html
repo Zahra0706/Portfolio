@@ -153,7 +153,7 @@
                 <div class="tl-dot"></div>
                 <div class="tl-connector"></div>
               </div>
-              <div class="tl-year">2025 – présent</div>
+              <div class="tl-year">2025 – 2027</div>
               <div class="tl-content">
                 <h4>Cycle Ingénieur 2ITE - option Big Data</h4>
                 <p>Ecole Nationale des Sciences Appliquées d'El Jadida · ENSAJ</p>
@@ -270,19 +270,85 @@
     <div class="section-inner">
       <div class="section-label">certifications</div>
       <h2 class="section-title">Mes <span>certifications</span></h2>
-      <div class="certs-grid">
-        <div class="cert-card reveal">
-          <div class="cert-icon"><i class="fas fa-award"></i></div>
+
+      <div class="cert-filters">
+        <button class="active" data-filter="all">Tous</button>
+        <button data-filter="web">Développement Web</button>
+        <button data-filter="programmation">Programmation</button>
+        <button data-filter="ia">IA & Data</button>
+        <button data-filter="cloud">Cloud</button>
+        <button data-filter="algo">Algorithmique</button>
+      </div>
+
+      <div class="cert-grid">
+        <div class="cert-card reveal" data-domain="algo">
+          <div class="cert-icon"><i class="fas fa-laptop-code"></i></div>
           <div class="cert-content">
-            <h4>AWS Academy - Cloud Foundations</h4>
-            <p>Avril 2026</p>
+            <h4>Problem Solving (Basic)</h4>
+            <p>HackerRank · Juil 2026</p>
           </div>
         </div>
-        <div class="cert-card reveal" style="transition-delay:0.1s">
-          <div class="cert-icon"><i class="fas fa-award"></i></div>
+        <div class="cert-card reveal" data-domain="cloud" style="transition-delay:0.05s">
+          <div class="cert-icon"><i class="fab fa-aws"></i></div>
           <div class="cert-content">
             <h4>AWS Academy - Cloud Security Foundations</h4>
-            <p>Mai 2026</p>
+            <p>AWS Academy · Mai 2026</p>
+          </div>
+        </div>
+        <div class="cert-card reveal" data-domain="cloud" style="transition-delay:0.1s">
+          <div class="cert-icon"><i class="fab fa-aws"></i></div>
+          <div class="cert-content">
+            <h4>AWS Academy - Cloud Foundations</h4>
+            <p>AWS Academy · Avril 2026</p>
+          </div>
+        </div>
+        <div class="cert-card reveal" data-domain="ia" style="transition-delay:0.15s">
+          <div class="cert-icon"><i class="fas fa-brain"></i></div>
+          <div class="cert-content">
+            <h4>Machine Learning & AI Beginners Course</h4>
+            <p>Udemy · Jan 2026</p>
+          </div>
+        </div>
+        <div class="cert-card reveal" data-domain="web" style="transition-delay:0.2s">
+          <div class="cert-icon"><i class="fab fa-php"></i></div>
+          <div class="cert-content">
+            <h4>Concevez votre site web avec PHP et MySQL</h4>
+            <p>OpenClassrooms · Déc 2023</p>
+          </div>
+        </div>
+        <div class="cert-card reveal" data-domain="web" style="transition-delay:0.25s">
+          <div class="cert-icon"><i class="fab fa-html5"></i></div>
+          <div class="cert-content">
+            <h4>Créez votre site web avec HTML5 et CSS3</h4>
+            <p>OpenClassrooms · Oct 2023</p>
+          </div>
+        </div>
+        <div class="cert-card reveal" data-domain="web" style="transition-delay:0.3s">
+          <div class="cert-icon"><i class="fab fa-js"></i></div>
+          <div class="cert-content">
+            <h4>Introduction to JavaScript</h4>
+            <p>SoloLearn · Août 2023</p>
+          </div>
+        </div>
+        <div class="cert-card reveal" data-domain="web" style="transition-delay:0.35s">
+          <div class="cert-icon"><i class="fab fa-css3-alt"></i></div>
+          <div class="cert-content">
+            <h4>Introduction to CSS</h4>
+            <p>SoloLearn · Août 2023</p>
+          </div>
+        </div>
+        <div class="cert-card reveal" data-domain="web" style="transition-delay:0.4s">
+          <div class="cert-icon"><i class="fab fa-html5"></i></div>
+          <div class="cert-content">
+            <h4>Introduction to HTML</h4>
+            <p>SoloLearn · Juil 2023</p>
+          </div>
+        </div>
+        <div class="cert-card reveal" data-domain="programmation" style="transition-delay:0.45s">
+          <div class="cert-icon"><i class="fas fa-code"></i></div>
+          <div class="cert-content">
+            <h4>Apprenez à programmer en C++</h4>
+            <p>OpenClassrooms · Avril 2023</p>
           </div>
         </div>
       </div>
@@ -346,6 +412,23 @@
           </div>
         </div>
 
+        <div class="project-card reveal" style="transition-delay:0.5s">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-chart-column"></i></div>
+            <span class="project-arrow"><i class="fas fa-arrow-up-right-from-square"></i></span>
+          </div>
+          <div class="project-title">Amazon Books BI</div>
+          <p class="project-desc">Solution Business Intelligence complète : pipelines ETL, data warehouse en modèle en
+            étoile, cubes OLAP et dashboards interactifs pour l'analyse des ventes et avis clients.</p>
+          <div class="project-stack">
+            <span class="pstack">PostgreSQL</span>
+            <span class="pstack">CloverDX</span>
+            <span class="pstack">Mondrian</span>
+            <span class="pstack">Tableau</span>
+            <span class="pstack">JasperReports</span>
+          </div>
+        </div>
+
         <div class="project-card reveal" style="transition-delay:0.2s">
           <div class="project-header">
             <div class="project-icon"><i class="fas fa-handshake"></i></div>
@@ -391,22 +474,7 @@
           </div>
         </div>
 
-        <div class="project-card reveal" style="transition-delay:0.5s">
-          <div class="project-header">
-            <div class="project-icon"><i class="fas fa-chart-column"></i></div>
-            <span class="project-arrow"><i class="fas fa-arrow-up-right-from-square"></i></span>
-          </div>
-          <div class="project-title">Amazon Books BI</div>
-          <p class="project-desc">Solution Business Intelligence complète : pipelines ETL, data warehouse en modèle en
-            étoile, cubes OLAP et dashboards interactifs pour l'analyse des ventes et avis clients.</p>
-          <div class="project-stack">
-            <span class="pstack">PostgreSQL</span>
-            <span class="pstack">CloverDX</span>
-            <span class="pstack">Mondrian</span>
-            <span class="pstack">Tableau</span>
-            <span class="pstack">JasperReports</span>
-          </div>
-        </div>
+        
 
       </div>
     </div>
@@ -516,7 +584,7 @@
       requestAnimationFrame(animateCursor);
     }
     animateCursor();
-    document.querySelectorAll('a,button,.project-card,.skill-group').forEach(el => {
+    document.querySelectorAll('a,button,.project-card,.skill-group,.cert-card').forEach(el => {
       el.addEventListener('mouseenter', () => { ring.style.width = ring.style.height = '56px'; });
       el.addEventListener('mouseleave', () => { ring.style.width = ring.style.height = '36px'; });
     });
@@ -536,6 +604,35 @@
       sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.getAttribute('id'); });
       navLinks.forEach(a => {
         a.style.color = a.getAttribute('href') === '#' + current ? 'var(--accent2)' : '';
+      });
+    });
+
+    // Certifications filtering
+    const filterButtons = document.querySelectorAll('.cert-filters button');
+    const certCards = document.querySelectorAll('.cert-card');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filterValue = btn.getAttribute('data-filter');
+
+        certCards.forEach(card => {
+          const matches = filterValue === 'all' || card.getAttribute('data-domain') === filterValue;
+          if (matches) {
+            card.style.display = 'flex';
+            void card.offsetHeight;
+            card.classList.remove('hidden-anim');
+          } else {
+            card.classList.add('hidden-anim');
+            setTimeout(() => {
+              if (card.classList.contains('hidden-anim')) {
+                card.style.display = 'none';
+              }
+            }, 300);
+          }
+        });
       });
     });
   </script>
