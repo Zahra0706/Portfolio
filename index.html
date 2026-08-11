@@ -1,495 +1,544 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zahra Chokri - Portfolio</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" href="styles.css">
-<link rel="icon" type="image/png" href="img/circle_logo.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zahra Chokri - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="img/circle_logo.png">
 
 </head>
+
 <body>
 
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursor-ring"></div>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
 
-<!-- NAV -->
-<nav>
+  <!-- NAV -->
+  <nav>
     <a class="navbar-brand" href="#">
-        <img src="img/circle_logo.png" alt="Logo" style="width: 60px; height: 60px; ">
+      <img src="img/circle_logo.png" alt="Logo" style="width: 60px; height: 60px; ">
     </a>
     <ul class="nav-links">
-        <li><a href="#about">about</a></li>
-        <li><a href="#skills">skills</a></li>
-        <li><a href="#certifications">certifications</a></li>
-        <li><a href="#projects">projects</a></li>
-        <li><a href="#experience">experience</a></li>
-        <li><a href="#contact">contact</a></li>
+      <li><a href="#about">about</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#certifications">certifications</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#experience">experience</a></li>
+      <li><a href="#contact">contact</a></li>
     </ul>
-</nav>
+  </nav>
 
-<!-- HERO -->
-<section id="home">
-  <div class="hero-left">
-    <div class="hero-tag">
-      <span class="status-dot"></span>
-      Recherche PFE - Data Science / Big Data
-    </div>
-    <h1 class="hero-name">
-      Zahra
-      <em>Chokri</em>
-    </h1>
-    <p class="hero-desc">
-      Ingénieure en devenir - spécialisée en <strong style="color:var(--text)">Big Data, IA & Cloud Computing</strong> à l'ENSAJ. 
-      Je construis des solutions full-stack, mobiles et data-driven qui ont de l'impact.
-    </p>
-    <div class="hero-btns">
-      <a href="#projects" class="btn-primary"><i class="fas fa-rocket"></i> Voir mes projets</a>
-      <a href="#contact" class="btn-ghost"><i class="fas fa-paper-plane"></i> Me contacter</a>
-    </div>
-    <div class="hero-socials">
-      <a href="https://www.linkedin.com/in/zahra-chokri-54419925a" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/Zahra0706" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-      <a href="https://zahra0706.github.io/Portfolio" target="_blank" title="Portfolio"><i class="fas fa-globe"></i></a>
-      <a href="mailto:zahraechokrii@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-    </div>
-  </div>
-
-  <div class="hero-right">
-    <div class="hero-card">
-      <div class="hero-card-label">// statut actuel</div>
-      <div class="hero-card-val">
-        <span class="status-dot"></span> 3ème année cycle ingénieur
-        <small>ENSAJ · El Jadida, Maroc</small>
+  <!-- HERO -->
+  <section id="home">
+    <div class="hero-left">
+      <div class="hero-tag">
+        <span class="status-dot"></span>
+        Recherche PFE - Data Science / Big Data
+      </div>
+      <h1 class="hero-name">
+        Zahra
+        <em>Chokri</em>
+      </h1>
+      <p class="hero-desc">
+        Ingénieure en devenir - spécialisée en <strong style="color:var(--text)">Big Data, IA & Cloud Computing</strong>
+        à l'ENSAJ.
+        Je construis des solutions full-stack, mobiles et data-driven qui ont de l'impact.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary"><i class="fas fa-rocket"></i> Voir mes projets</a>
+        <a href="#contact" class="btn-ghost"><i class="fas fa-paper-plane"></i> Me contacter</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://www.linkedin.com/in/zahra-chokri-54419925a" target="_blank" title="LinkedIn"><i
+            class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Zahra0706" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://zahra0706.github.io/Portfolio" target="_blank" title="Portfolio"><i
+            class="fas fa-globe"></i></a>
+        <a href="mailto:zahraechokrii@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
-    <div class="hero-card">
-      <div class="hero-card-label">// domaines de prédilection</div>
-      <div class="skills-mini">
-        <span class="skill-pill">Big Data</span>
-        <span class="skill-pill">Machine Learning</span>
-        <span class="skill-pill">Cloud</span>
-        <span class="skill-pill">Full Stack</span>
-        <span class="skill-pill">Mobile</span>
-        <span class="skill-pill">Data Engineering</span>
-      </div>
-    </div>
-    <div class="hero-card">
-      <div class="hero-card-label">// stack principal</div>
-      <div class="skills-mini">
-        <span class="skill-pill">Python</span>
-        <span class="skill-pill">Flutter</span>
-        <span class="skill-pill">React</span>
-        <span class="skill-pill">Laravel</span>
-        <span class="skill-pill">Spark</span>
-        <span class="skill-pill">MongoDB</span>
-        <span class="skill-pill">Docker</span>
-        <span class="skill-pill">Kafka</span>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="section-inner">
-    <div class="section-label">about me</div>
-    <h2 class="section-title">Passionnée de tech,<br><span>construite pour innover</span></h2>
-    <div class="about-grid">
-      <div class="about-text reveal">
-        <p>
-          Je suis <strong>Zahra Chokri</strong>, étudiante en 2ème année du cycle ingénieur en <strong>Ingénierie Informatique et Technologies Émergentes</strong> à l'ENSAJ. Titulaire d'un DUT en Génie Informatique et d'une Licence Professionnelle en IMA, j'ai construit une solide expérience technique sur de multiples fronts.
-        </p>
-        <p>
-          Mon univers tourne autour de l'<strong>intelligence artificielle</strong>, du <strong>Big Data</strong> et du <strong>Cloud Computing</strong> - avec une vraie passion pour transformer des données brutes en solutions concrètes. Du pipeline de données au composant UI, je maîtrise toute la chaîne.
-        </p>
-        <p>
-          En dehors du code, je m'intéresse à la cybersécurité, l'administration réseau sous Linux, et à la modélisation de systèmes complexes (UML, Merise). Je parle <strong>arabe</strong>, <strong>français</strong> et <strong>anglais</strong> couramment.
-        </p>
-        <div class="about-stats">
-          <div class="stat-box">
-            <div class="stat-num">6+</div>
-            <div class="stat-label">projets réalisés</div>
-          </div>
-          <div class="stat-box">
-            <div class="stat-num">3</div>
-            <div class="stat-label">stages effectués</div>
-          </div>
-          <div class="stat-box">
-            <div class="stat-num">15+</div>
-            <div class="stat-label">technos maîtrisées</div>
-          </div>
-          <div class="stat-box">
-            <div class="stat-num">3</div>
-            <div class="stat-label">langues parlées</div>
-          </div>
+    <div class="hero-right">
+      <div class="hero-card">
+        <div class="hero-card-label">// statut actuel</div>
+        <div class="hero-card-val">
+          <span class="status-dot"></span> 3ème année cycle ingénieur
+          <small>ENSAJ · El Jadida, Maroc</small>
         </div>
       </div>
+      <div class="hero-card">
+        <div class="hero-card-label">// domaines de prédilection</div>
+        <div class="skills-mini">
+          <span class="skill-pill">Big Data</span>
+          <span class="skill-pill">Machine Learning</span>
+          <span class="skill-pill">Cloud</span>
+          <span class="skill-pill">Full Stack</span>
+          <span class="skill-pill">Mobile</span>
+          <span class="skill-pill">Data Engineering</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-label">// stack principal</div>
+        <div class="skills-mini">
+          <span class="skill-pill">Python</span>
+          <span class="skill-pill">Flutter</span>
+          <span class="skill-pill">React</span>
+          <span class="skill-pill">Laravel</span>
+          <span class="skill-pill">Spark</span>
+          <span class="skill-pill">MongoDB</span>
+          <span class="skill-pill">Docker</span>
+          <span class="skill-pill">Kafka</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <div class="reveal" style="transition-delay:0.15s">
-        <div class="section-label" style="margin-bottom:1.2rem">formation</div>
-        <div class="timeline">
-          <div class="tl-item">
-            <div class="tl-line"><div class="tl-dot"></div><div class="tl-connector"></div></div>
-            <div class="tl-year">2025 – présent</div>
-            <div class="tl-content">
-              <h4>Cycle Ingénieur 2ITE - option Big Data</h4>
-              <p>Ecole Nationale des Sciences Appliquées d'El Jadida · ENSAJ</p>
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="section-label">about me</div>
+      <h2 class="section-title">Passionnée de tech,<br><span>construite pour innover</span></h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Je suis <strong>Zahra Chokri</strong>, étudiante en 3ème année du cycle ingénieur en <strong>Ingénierie
+              Informatique et Technologies Émergentes</strong> à l'ENSAJ, spécialisation Big Data. Titulaire d'un DUT en
+            Génie Informatique et d'une Licence Professionnelle en IMA, j'ai construit une solide expérience technique
+            sur de multiples fronts.
+          </p>
+          <p>
+            Mon univers tourne autour du <strong>Big Data</strong>, de l'<strong>intelligence artificielle</strong> et
+            du <strong>Cloud Computing</strong> - avec une vraie passion pour transformer des données brutes en
+            solutions concrètes. Du pipeline de données au modèle prédictif, en passant par le dashboard interactif, je
+            maîtrise toute la chaîne : ETL, data warehousing, machine learning et visualisation.
+          </p>
+          <p>
+            Je suis actuellement en stage PFE chez OCP Jorf Lasfar, où j'automatise l'analyse de la qualité de l'eau. En
+            dehors du code, je m'intéresse à la cybersécurité, l'administration réseau sous Linux, et à la modélisation
+            de systèmes complexes (UML, Merise). Je parle <strong>arabe</strong>, <strong>français</strong> et
+            <strong>anglais</strong> couramment.
+          </p>
+          <div class="about-stats">
+            <div class="stat-box">
+              <div class="stat-num">6+</div>
+              <div class="stat-label">projets réalisés</div>
             </div>
-          </div>
-          <div class="tl-item">
-            <div class="tl-line"><div class="tl-dot" style="background:var(--accent3)"></div><div class="tl-connector"></div></div>
-            <div class="tl-year">2024 – 2025</div>
-            <div class="tl-content">
-              <h4>Licence ProIMA</h4>
-              <p>Faculté Polydisciplinaire Sidi Bennour · FPSB</p>
+            <div class="stat-box">
+              <div class="stat-num">3</div>
+              <div class="stat-label">stages effectués</div>
             </div>
-          </div>
-          <div class="tl-item">
-            <div class="tl-line"><div class="tl-dot" style="background:var(--accent3)"></div><div class="tl-connector"></div></div>
-            <div class="tl-year">2022 – 2024</div>
-            <div class="tl-content">
-              <h4>DUT Génie Informatique</h4>
-              <p>Ecole Supérieure de technologie de Sidi Bennour · ESTSB</p>
+            <div class="stat-box">
+              <div class="stat-num">15+</div>
+              <div class="stat-label">technos maîtrisées</div>
             </div>
-          </div>
-          <div class="tl-item">
-            <div class="tl-line"><div class="tl-dot" style="background:var(--muted)"></div></div>
-            <div class="tl-year">2022</div>
-            <div class="tl-content">
-              <h4>Baccalauréat Sciences Physiques</h4>
-              <p>Lycée Ibn Khaldoun · El Jadida</p>
+            <div class="stat-box">
+              <div class="stat-num">3</div>
+              <div class="stat-label">langues parlées</div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- SKILLS -->
-<section id="skills">
-  <div class="section-inner">
-    <div class="section-label">compétences</div>
-    <h2 class="section-title">Mon <span>expertise</span> technique</h2>
-    <div class="skills-grid">
-      <div class="skill-group reveal">
-        <div class="skill-group-icon"><i class="fas fa-code"></i></div>
-        <h3>Langages</h3>
-        <div class="skill-tags">
-          <span class="stag">Python</span><span class="stag">Java</span><span class="stag">JavaScript</span>
-          <span class="stag">TypeScript</span><span class="stag">PHP</span><span class="stag">Dart</span>
-          <span class="stag">C / C++</span><span class="stag">Kotlin</span><span class="stag">VB.NET</span>
-        </div>
-      </div>
-      <div class="skill-group reveal" style="transition-delay:0.1s">
-        <div class="skill-group-icon"><i class="fas fa-mobile-alt"></i></div>
-        <h3>Mobile & Frontend</h3>
-        <div class="skill-tags">
-          <span class="stag">Flutter</span><span class="stag">React Native</span><span class="stag">React</span>
-          <span class="stag">Angular</span><span class="stag">Ionic</span><span class="stag">TailwindCSS</span>
-          <span class="stag">Bootstrap</span>
-        </div>
-      </div>
-      <div class="skill-group reveal" style="transition-delay:0.2s">
-        <div class="skill-group-icon"><i class="fas fa-server"></i></div>
-        <h3>Backend & Bases de données</h3>
-        <div class="skill-tags">
-          <span class="stag">Laravel</span><span class="stag">Node.js</span><span class="stag">Spring Boot</span>
-          <span class="stag">Django</span><span class="stag">MySQL</span><span class="stag">PostgreSQL</span>
-          <span class="stag">MongoDB</span><span class="stag">Oracle</span><span class="stag">Firebase</span>
-        </div>
-      </div>
-      <div class="skill-group reveal" style="transition-delay:0.3s">
-        <div class="skill-group-icon"><i class="fas fa-brain"></i></div>
-        <h3>Big Data & IA</h3>
-        <div class="skill-tags">
-          <span class="stag">Apache Spark</span><span class="stag">Hadoop</span><span class="stag">HDFS</span>
-          <span class="stag">MapReduce</span><span class="stag">Kafka</span><span class="stag">Hive</span>
-          <span class="stag">Cassandra</span><span class="stag">TensorFlow</span><span class="stag">PyTorch</span>
-          <span class="stag">OpenCV</span><span class="stag">ML / DL / RL</span><span class="stag">Data Engineering</span>
-          <span class="stag">BI</span>
-        </div>
-      </div>
-      <div class="skill-group reveal" style="transition-delay:0.4s">
-        <div class="skill-group-icon"><i class="fas fa-cloud"></i></div>
-        <h3>Cloud & DevOps</h3>
-        <div class="skill-tags">
-          <span class="stag">AWS</span><span class="stag">GCP</span><span class="stag">Docker</span>
-          <span class="stag">ElasticSearch</span><span class="stag">Kibana</span><span class="stag">Talend</span>
-          <span class="stag">Git / GitHub</span><span class="stag">Linux</span><span class="stag">Cloud Computing</span>
-          <span class="stag">Cybersécurité</span>
-        </div>
-      </div>
-      <div class="skill-group reveal" style="transition-delay:0.5s">
-        <div class="skill-group-icon"><i class="fas fa-drafting-compass"></i></div>
-        <h3>Conception & Méthodes</h3>
-        <div class="skill-tags">
-          <span class="stag">UML</span><span class="stag">MERISE</span><span class="stag">MATLAB</span>
-          <span class="stag">Réseaux Linux</span><span class="stag">DHCP / DNS</span><span class="stag">VLAN</span>
+        <div class="reveal" style="transition-delay:0.15s">
+          <div class="section-label" style="margin-bottom:1.2rem">formation</div>
+          <div class="timeline">
+            <div class="tl-item">
+              <div class="tl-line">
+                <div class="tl-dot"></div>
+                <div class="tl-connector"></div>
+              </div>
+              <div class="tl-year">2025 – présent</div>
+              <div class="tl-content">
+                <h4>Cycle Ingénieur 2ITE - option Big Data</h4>
+                <p>Ecole Nationale des Sciences Appliquées d'El Jadida · ENSAJ</p>
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-line">
+                <div class="tl-dot" style="background:var(--accent3)"></div>
+                <div class="tl-connector"></div>
+              </div>
+              <div class="tl-year">2024 – 2025</div>
+              <div class="tl-content">
+                <h4>Licence Professionnelle en Informatique et Mathématiques Appliquées</h4>
+                <p>Faculté Polydisciplinaire Sidi Bennour · FPSB</p>
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-line">
+                <div class="tl-dot" style="background:var(--accent3)"></div>
+                <div class="tl-connector"></div>
+              </div>
+              <div class="tl-year">2022 – 2024</div>
+              <div class="tl-content">
+                <h4>DUT Génie Informatique</h4>
+                <p>Ecole Supérieure de technologie de Sidi Bennour · ESTSB</p>
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-line">
+                <div class="tl-dot" style="background:var(--muted)"></div>
+              </div>
+              <div class="tl-year">2022</div>
+              <div class="tl-content">
+                <h4>Baccalauréat Sciences Physiques</h4>
+                <p>Lycée Ibn Khaldoun · El Jadida</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- CERTIFICATIONS -->
-<section id="certifications">
-  <div class="section-inner">
-    <div class="section-label">certifications</div>
-    <h2 class="section-title">Mes <span>certifications</span></h2>
-    <div class="certs-grid">
-      <div class="cert-card reveal">
-        <div class="cert-icon"><i class="fas fa-award"></i></div>
-        <div class="cert-content">
-          <h4>AWS Academy - Cloud Foundations</h4>
-          <p>Avril 2026</p>
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-inner">
+      <div class="section-label">compétences</div>
+      <h2 class="section-title">Mon <span>expertise</span> technique</h2>
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <div class="skill-group-icon"><i class="fas fa-code"></i></div>
+          <h3>Langages</h3>
+          <div class="skill-tags">
+            <span class="stag">Python</span><span class="stag">Java</span><span class="stag">JavaScript</span>
+            <span class="stag">TypeScript</span><span class="stag">PHP</span><span class="stag">Dart</span>
+            <span class="stag">C / C++</span><span class="stag">Kotlin</span><span class="stag">VB.NET</span>
+          </div>
         </div>
-      </div>
-      <div class="cert-card reveal" style="transition-delay:0.1s">
-        <div class="cert-icon"><i class="fas fa-award"></i></div>
-        <div class="cert-content">
-          <h4>AWS Academy - Cloud Security Foundations</h4>
-          <p>Mai 2026</p>
+        <div class="skill-group reveal" style="transition-delay:0.1s">
+          <div class="skill-group-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3>Mobile & Frontend</h3>
+          <div class="skill-tags">
+            <span class="stag">Flutter</span><span class="stag">React Native</span><span class="stag">React</span>
+            <span class="stag">Angular</span><span class="stag">Ionic</span><span class="stag">TailwindCSS</span>
+            <span class="stag">Bootstrap</span>
+          </div>
+        </div>
+        <div class="skill-group reveal" style="transition-delay:0.2s">
+          <div class="skill-group-icon"><i class="fas fa-server"></i></div>
+          <h3>Backend & Bases de données</h3>
+          <div class="skill-tags">
+            <span class="stag">Laravel</span><span class="stag">Node.js</span><span class="stag">Spring Boot</span>
+            <span class="stag">Django</span><span class="stag">MySQL</span><span class="stag">PostgreSQL</span>
+            <span class="stag">MongoDB</span><span class="stag">Oracle</span><span class="stag">Firebase</span>
+          </div>
+        </div>
+        <div class="skill-group reveal" style="transition-delay:0.3s">
+          <div class="skill-group-icon"><i class="fas fa-brain"></i></div>
+          <h3>Big Data & IA</h3>
+          <div class="skill-tags">
+            <span class="stag">Apache Spark</span><span class="stag">Hadoop</span><span class="stag">HDFS</span>
+            <span class="stag">MapReduce</span><span class="stag">Kafka</span><span class="stag">Hive</span>
+            <span class="stag">Cassandra</span><span class="stag">TensorFlow</span><span class="stag">PyTorch</span>
+            <span class="stag">OpenCV</span><span class="stag">ML / DL / RL</span><span class="stag">Data
+              Engineering</span>
+            <span class="stag">BI</span>
+          </div>
+        </div>
+        <div class="skill-group reveal" style="transition-delay:0.4s">
+          <div class="skill-group-icon"><i class="fas fa-cloud"></i></div>
+          <h3>Cloud & DevOps</h3>
+          <div class="skill-tags">
+            <span class="stag">AWS</span><span class="stag">GCP</span><span class="stag">Docker</span>
+            <span class="stag">ElasticSearch</span><span class="stag">Kibana</span><span class="stag">Talend</span>
+            <span class="stag">Git / GitHub</span><span class="stag">Linux</span><span class="stag">Cloud
+              Computing</span>
+            <span class="stag">Cybersécurité</span>
+          </div>
+        </div>
+        <div class="skill-group reveal" style="transition-delay:0.5s">
+          <div class="skill-group-icon"><i class="fas fa-drafting-compass"></i></div>
+          <h3>Conception & Méthodes</h3>
+          <div class="skill-tags">
+            <span class="stag">UML</span><span class="stag">MERISE</span><span class="stag">MATLAB</span>
+            <span class="stag">Réseaux Linux</span><span class="stag">DHCP / DNS</span><span class="stag">VLAN</span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="section-inner">
-    <div class="section-label">projets</div>
-    <h2 class="section-title">Ce que j'ai <span>construit</span></h2>
-    <div class="projects-grid">
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <div class="section-inner">
+      <div class="section-label">certifications</div>
+      <h2 class="section-title">Mes <span>certifications</span></h2>
+      <div class="certs-grid">
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fas fa-award"></i></div>
+          <div class="cert-content">
+            <h4>AWS Academy - Cloud Foundations</h4>
+            <p>Avril 2026</p>
+          </div>
+        </div>
+        <div class="cert-card reveal" style="transition-delay:0.1s">
+          <div class="cert-icon"><i class="fas fa-award"></i></div>
+          <div class="cert-content">
+            <h4>AWS Academy - Cloud Security Foundations</h4>
+            <p>Mai 2026</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <!-- Featured -->
-      <div class="project-card featured reveal">
-        <div class="project-body">
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="section-label">projets</div>
+      <h2 class="section-title">Ce que j'ai <span>construit</span></h2>
+      <div class="projects-grid">
+
+        <!-- Featured -->
+        <div class="project-card featured reveal">
+          <div class="project-body">
+            <div class="project-header">
+              <div class="project-icon"><i class="fas fa-car"></i></div>
+              <span class="project-arrow"><i class="fas fa-arrow-up-right-from-square"></i></span>
+            </div>
+            <div class="project-title">VIGGO</div>
+            <p class="project-desc">Application mobile intelligente de <strong style="color:var(--text)">surveillance du
+                conducteur</strong> en temps réel. Détection de fatigue et d'inattention via computer vision, alertes
+              instantanées pour améliorer la sécurité routière.</p>
+            <div class="project-stack">
+              <span class="pstack">Flutter</span>
+              <span class="pstack">Node.js</span>
+              <span class="pstack">MongoDB</span>
+            </div>
+          </div>
+          <div class="feat-visual">
+            <span class="kw">import</span> tensorflow <span class="kw">as</span> tf<br>
+            <span class="kw">import</span> cv2<br><br>
+            <span class="kw">class</span> <span class="fn">DriverMonitor</span>:<br>
+            &nbsp;&nbsp;<span class="kw">def</span> <span class="fn">detect_fatigue</span>(self, frame):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;landmarks = self.<span class="fn">face_mesh</span>(frame)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;ear = self.<span class="fn">eye_aspect_ratio</span>(landmarks)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">if</span> ear &lt; <span class="str">0.25</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fn">alert</span>(<span class="str">"FATIGUE
+              DETECTED"</span>)
+          </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay:0.1s">
           <div class="project-header">
-            <div class="project-icon"><i class="fas fa-car"></i></div>
+            <div class="project-icon"><i class="fas fa-shield-halved"></i></div>
             <span class="project-arrow"><i class="fas fa-arrow-up-right-from-square"></i></span>
           </div>
-          <div class="project-title">VIGGO</div>
-          <p class="project-desc">Application mobile intelligente de <strong style="color:var(--text)">surveillance du conducteur</strong> en temps réel. Détection de fatigue et d'inattention via computer vision, alertes instantanées pour améliorer la sécurité routière.</p>
+          <div class="project-title">NoSQL Schema Inspector</div>
+          <p class="project-desc">Plateforme open-source d'audit de bases NoSQL orientées documents : découverte
+            automatique de schéma, analyse de qualité et de sécurité des données, détection en temps réel du schema
+            drift, et assistant IA propulsé par Groq et Llama 3.</p>
           <div class="project-stack">
-            <span class="pstack">Flutter</span>
-            <span class="pstack">Node.js</span>
+            <span class="pstack">Python</span>
             <span class="pstack">MongoDB</span>
+            <span class="pstack">CouchDB</span>
+            <span class="pstack">Groq</span>
+            <span class="pstack">Llama 3</span>
+            <span class="pstack">Firebase</span>
+            <span class="pstack">Couche DB</span>
           </div>
         </div>
-        <div class="feat-visual">
-<span class="kw">import</span> tensorflow <span class="kw">as</span> tf<br>
-<span class="kw">import</span> cv2<br><br>
-<span class="kw">class</span> <span class="fn">DriverMonitor</span>:<br>
-&nbsp;&nbsp;<span class="kw">def</span> <span class="fn">detect_fatigue</span>(self, frame):<br>
-&nbsp;&nbsp;&nbsp;&nbsp;landmarks = self.<span class="fn">face_mesh</span>(frame)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;ear = self.<span class="fn">eye_aspect_ratio</span>(landmarks)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">if</span> ear &lt; <span class="str">0.25</span>:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fn">alert</span>(<span class="str">"FATIGUE DETECTED"</span>)
-        </div>
-      </div>
 
-      <div class="project-card reveal" style="transition-delay:0.1s">
-        <div class="project-header">
-          <div class="project-icon"><i class="fas fa-shield-halved"></i></div>
-          <span class="project-arrow"><i class="fas fa-arrow-up-right-from-square"></i></span>
+        <div class="project-card reveal" style="transition-delay:0.2s">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-handshake"></i></div>
+            <span class="project-arrow"><i class="fas fa-arrow-up-right-from-square"></i></span>
+          </div>
+          <div class="project-title">InvestMaroc</div>
+          <p class="project-desc">Plateforme de mise en relation <strong style="color:var(--text)">entrepreneurs ↔
+              investisseurs</strong> au Maroc. Smart matching, showcase de projets. Hackathon FPSB - Déc. 2024.</p>
+          <div class="project-stack">
+            <span class="pstack">React</span>
+            <span class="pstack">Laravel</span>
+            <span class="pstack">MySQL</span>
+          </div>
         </div>
-        <div class="project-title">NoSQL Schema Inspector</div>
-        <p class="project-desc">Plateforme open-source d'audit de bases NoSQL orientées documents : découverte automatique de schéma, analyse de qualité et de sécurité des données, détection en temps réel du schema drift, et assistant IA propulsé par Groq et Llama 3.</p>
-        <div class="project-stack">
-          <span class="pstack">Python</span>
-          <span class="pstack">MongoDB</span>
-          <span class="pstack">CouchDB</span>
-          <span class="pstack">Groq</span>
-          <span class="pstack">Llama 3</span>
-          <span class="pstack">Firebase</span>
-          <span class="pstack">Couche DB</span>
-        </div>
-      </div>
 
-      <div class="project-card reveal" style="transition-delay:0.2s">
-        <div class="project-header">
-          <div class="project-icon"><i class="fas fa-handshake"></i></div>
-          <span class="project-arrow"><i class="fas fa-arrow-up-right-from-square"></i></span>
+        <div class="project-card reveal" style="transition-delay:0.3s">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-face-smile"></i></div>
+            <span class="project-arrow"><i class="fas fa-arrow-up-right-from-square"></i></span>
+          </div>
+          <div class="project-title">Reconnaissance Faciale</div>
+          <p class="project-desc">Application de <strong style="color:var(--text)">reconnaissance faciale</strong> temps
+            réel avec gestion de base de données intégrée. Projet de fin d'études DUT.</p>
+          <div class="project-stack">
+            <span class="pstack">Python</span>
+            <span class="pstack">OpenCV</span>
+            <span class="pstack">SQLite</span>
+          </div>
         </div>
-        <div class="project-title">InvestMaroc</div>
-        <p class="project-desc">Plateforme de mise en relation <strong style="color:var(--text)">entrepreneurs ↔ investisseurs</strong> au Maroc. Smart matching, showcase de projets. Hackathon FPSB - Déc. 2024.</p>
-        <div class="project-stack">
-          <span class="pstack">React</span>
-          <span class="pstack">Laravel</span>
-          <span class="pstack">MySQL</span>
-        </div>
-      </div>
 
-      <div class="project-card reveal" style="transition-delay:0.3s">
-        <div class="project-header">
-          <div class="project-icon"><i class="fas fa-face-smile"></i></div>
-          <span class="project-arrow"><i class="fas fa-arrow-up-right-from-square"></i></span>
+        <div class="project-card reveal" style="transition-delay:0.4s">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-message"></i></div>
+            <span class="project-arrow"><i class="fas fa-arrow-up-right-from-square"></i></span>
+          </div>
+          <div class="project-title">App Messagerie Locale</div>
+          <p class="project-desc">Application web & mobile de <strong style="color:var(--text)">messagerie
+              interne</strong> développée lors du stage OCP (JFC5). Fonctionnement hors-ligne first.</p>
+          <div class="project-stack">
+            <span class="pstack">Ionic</span>
+            <span class="pstack">TypeScript</span>
+            <span class="pstack">Dexie.js</span>
+          </div>
         </div>
-        <div class="project-title">Reconnaissance Faciale</div>
-        <p class="project-desc">Application de <strong style="color:var(--text)">reconnaissance faciale</strong> temps réel avec gestion de base de données intégrée. Projet de fin d'études DUT.</p>
-        <div class="project-stack">
-          <span class="pstack">Python</span>
-          <span class="pstack">OpenCV</span>
-          <span class="pstack">SQLite</span>
-        </div>
-      </div>
 
-      <div class="project-card reveal" style="transition-delay:0.4s">
-        <div class="project-header">
-          <div class="project-icon"><i class="fas fa-message"></i></div>
-          <span class="project-arrow"><i class="fas fa-arrow-up-right-from-square"></i></span>
+        <div class="project-card reveal" style="transition-delay:0.5s">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-chart-column"></i></div>
+            <span class="project-arrow"><i class="fas fa-arrow-up-right-from-square"></i></span>
+          </div>
+          <div class="project-title">Amazon Books BI</div>
+          <p class="project-desc">Solution Business Intelligence complète : pipelines ETL, data warehouse en modèle en
+            étoile, cubes OLAP et dashboards interactifs pour l'analyse des ventes et avis clients.</p>
+          <div class="project-stack">
+            <span class="pstack">PostgreSQL</span>
+            <span class="pstack">CloverDX</span>
+            <span class="pstack">Mondrian</span>
+            <span class="pstack">Tableau</span>
+            <span class="pstack">JasperReports</span>
+          </div>
         </div>
-        <div class="project-title">App Messagerie Locale</div>
-        <p class="project-desc">Application web & mobile de <strong style="color:var(--text)">messagerie interne</strong> développée lors du stage OCP (JFC5). Fonctionnement hors-ligne first.</p>
-        <div class="project-stack">
-          <span class="pstack">Ionic</span>
-          <span class="pstack">TypeScript</span>
-          <span class="pstack">Dexie.js</span>
-        </div>
-      </div>
 
-      <div class="project-card reveal" style="transition-delay:0.5s">
-        <div class="project-header">
-          <div class="project-icon"><i class="fas fa-chart-column"></i></div>
-          <span class="project-arrow"><i class="fas fa-arrow-up-right-from-square"></i></span>
-        </div>
-        <div class="project-title">Amazon Books BI</div>
-        <p class="project-desc">Solution Business Intelligence complète : pipelines ETL, data warehouse en modèle en étoile, cubes OLAP et dashboards interactifs pour l'analyse des ventes et avis clients.</p>
-        <div class="project-stack">
-          <span class="pstack">PostgreSQL</span>
-          <span class="pstack">CloverDX</span>
-          <span class="pstack">Mondrian</span>
-          <span class="pstack">Tableau</span>
-          <span class="pstack">JasperReports</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience">
-  <div class="section-inner">
-    <div class="section-label">expériences</div>
-    <h2 class="section-title">Mon <span>parcours</span> professionnel</h2>
-    <div class="exp-list">
-      <div class="exp-item reveal">
-        <div class="exp-num">01</div>
-        <div class="exp-content">
-          <h4>Stage PFE - Automatisation de l'analyse de la qualité de l'eau</h4>
-          <p>Développement d'une solution Python (Pandas, Matplotlib) pour l'automatisation de l'analyse des données de qualité de l'eau, le calcul de KPIs, la visualisation et le reporting.</p>
-        </div>
-        <div class="exp-org">OCP · Jorf Lasfar (Dessalement)<div class="exp-date">Juin – Août 2026</div></div>
-      </div>
-      <div class="exp-item reveal" style="transition-delay:0.1s">
-        <div class="exp-num">02</div>
-        <div class="exp-content">
-          <h4>Stage PFE - Gestion des réclamations</h4>
-          <p>Conception et développement d'une application web de gestion des réclamations et demandes administratives. Stack : Laravel & MySQL.</p>
-        </div>
-        <div class="exp-org">FPSB<div class="exp-date">Avr – Juin 2025</div></div>
-      </div>
-      <div class="exp-item reveal" style="transition-delay:0.2s">
-        <div class="exp-num">03</div>
-        <div class="exp-content">
-          <h4>Hackathon - InvestMaroc</h4>
-          <p>Développement en équipe d'une plateforme de mise en relation entrepreneurs-investisseurs. HTML, CSS, Bootstrap, JS, PHP, MySQL.</p>
-        </div>
-        <div class="exp-org">FPSB<div class="exp-date">Déc 2024 – Jan 2025</div></div>
-      </div>
-      <div class="exp-item reveal" style="transition-delay:0.3s">
-        <div class="exp-num">04</div>
-        <div class="exp-content">
-          <h4>Stage technique - Application de messagerie locale</h4>
-          <p>Développement d'une application web & mobile de messagerie interne avec Ionic, TypeScript et Dexie.js pour la gestion offline.</p>
-        </div>
-        <div class="exp-org">OCP · JFC5<div class="exp-date">Avr – Mai 2024</div></div>
-      </div>
-      <div class="exp-item reveal" style="transition-delay:0.4s">
-        <div class="exp-num">05</div>
-        <div class="exp-content">
-          <h4>Stage d'initiation - Site web identificatif JFC5</h4>
-          <p>Développement d'un site web identificatif pour JFC5 : HTML, CSS, JavaScript, PHP et MySQL.</p>
-        </div>
-        <div class="exp-org">OCP · JFC5<div class="exp-date">Juil 2023</div></div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- CONTACT -->
-<section id="contact">
-  <div class="section-inner">
-    <div class="contact-inner">
-      <div class="section-label">contact</div>
-      <h2 class="section-title">Travaillons <span>ensemble</span></h2>
-      <p class="contact-tagline reveal">
-        Je suis activement à la recherche d'un <strong style="color:var(--text)">stage d'été 2026</strong>. N'hésitez pas à me contacter pour discuter de vos projets ou opportunités.
-      </p>
-      <div class="contact-links reveal">
-        <a href="mailto:zahraechokrii@gmail.com" class="contact-link">
-          <i class="fas fa-envelope"></i> zahraechokrii@gmail.com
-        </a>
-        <a href="https://www.linkedin.com/in/zahra-chokri-54419925a" target="_blank" class="contact-link">
-          <i class="fab fa-linkedin"></i> LinkedIn
-        </a>
-        <a href="https://github.com/Zahra0706" target="_blank" class="contact-link">
-          <i class="fab fa-github"></i> GitHub
-        </a>
-      </div>
-      <a href="cv/CV CHOKRI Zahra.pdf" download class="btn-primary reveal" style="margin:0 auto;width:fit-content">
-        <i class="fas fa-download"></i> Télécharger mon CV
-      </a>
-      <div class="footer reveal">
-        <span>© 2026 Zahra Chokri · El Jadida, Maroc</span>
-        <span style="font-family:var(--font-mono);color:var(--accent)">made with &lt;3</span>
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-inner">
+      <div class="section-label">expériences</div>
+      <h2 class="section-title">Mon <span>parcours</span> professionnel</h2>
+      <div class="exp-list">
+        <div class="exp-item reveal">
+          <div class="exp-num">01</div>
+          <div class="exp-content">
+            <h4>Stage PFE - Automatisation de l'analyse de la qualité de l'eau</h4>
+            <p>Développement d'une solution Python (Pandas, Matplotlib) pour l'automatisation de l'analyse des données
+              de qualité de l'eau, le calcul de KPIs, la visualisation et le reporting.</p>
+          </div>
+          <div class="exp-org">OCP · Jorf Lasfar (Dessalement)<div class="exp-date">Juin – Août 2026</div>
+          </div>
+        </div>
+        <div class="exp-item reveal" style="transition-delay:0.1s">
+          <div class="exp-num">02</div>
+          <div class="exp-content">
+            <h4>Stage PFE - Gestion des réclamations</h4>
+            <p>Conception et développement d'une application web de gestion des réclamations et demandes
+              administratives. Stack : Laravel & MySQL.</p>
+          </div>
+          <div class="exp-org">FPSB<div class="exp-date">Avr – Juin 2025</div>
+          </div>
+        </div>
+        <div class="exp-item reveal" style="transition-delay:0.2s">
+          <div class="exp-num">03</div>
+          <div class="exp-content">
+            <h4>Hackathon - InvestMaroc</h4>
+            <p>Développement en équipe d'une plateforme de mise en relation entrepreneurs-investisseurs. HTML, CSS,
+              Bootstrap, JS, PHP, MySQL.</p>
+          </div>
+          <div class="exp-org">FPSB<div class="exp-date">Déc 2024 – Jan 2025</div>
+          </div>
+        </div>
+        <div class="exp-item reveal" style="transition-delay:0.3s">
+          <div class="exp-num">04</div>
+          <div class="exp-content">
+            <h4>Stage technique - Application de messagerie locale</h4>
+            <p>Développement d'une application web & mobile de messagerie interne avec Ionic, TypeScript et Dexie.js
+              pour la gestion offline.</p>
+          </div>
+          <div class="exp-org">OCP · JFC5<div class="exp-date">Avr – Mai 2024</div>
+          </div>
+        </div>
+        <div class="exp-item reveal" style="transition-delay:0.4s">
+          <div class="exp-num">05</div>
+          <div class="exp-content">
+            <h4>Stage d'initiation - Site web identificatif JFC5</h4>
+            <p>Développement d'un site web identificatif pour JFC5 : HTML, CSS, JavaScript, PHP et MySQL.</p>
+          </div>
+          <div class="exp-org">OCP · JFC5<div class="exp-date">Juil 2023</div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<script>
-// Cursor
-const cursor = document.getElementById('cursor');
-const ring = document.getElementById('cursor-ring');
-let mx = 0, my = 0, rx = 0, ry = 0;
-document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
-function animateCursor() {
-  cursor.style.transform = `translate(${mx-4}px, ${my-4}px)`;
-  rx += (mx - rx) * 0.15; ry += (my - ry) * 0.15;
-  ring.style.transform = `translate(${rx-18}px, ${ry-18}px)`;
-  requestAnimationFrame(animateCursor);
-}
-animateCursor();
-document.querySelectorAll('a,button,.project-card,.skill-group').forEach(el => {
-  el.addEventListener('mouseenter', () => { ring.style.width = ring.style.height = '56px'; });
-  el.addEventListener('mouseleave', () => { ring.style.width = ring.style.height = '36px'; });
-});
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="contact-inner">
+        <div class="section-label">contact</div>
+        <h2 class="section-title">Travaillons <span>ensemble</span></h2>
+        <p class="contact-tagline reveal">
+          Je suis activement à la recherche d'un <strong style="color:var(--text)">stage d'été 2026</strong>. N'hésitez
+          pas à me contacter pour discuter de vos projets ou opportunités.
+        </p>
+        <div class="contact-links reveal">
+          <a href="mailto:zahraechokrii@gmail.com" class="contact-link">
+            <i class="fas fa-envelope"></i> zahraechokrii@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/zahra-chokri-54419925a" target="_blank" class="contact-link">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/Zahra0706" target="_blank" class="contact-link">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+        <a href="cv/CV CHOKRI Zahra.pdf" download class="btn-primary reveal" style="margin:0 auto;width:fit-content">
+          <i class="fas fa-download"></i> Télécharger mon CV
+        </a>
+        <div class="footer reveal">
+          <span>© 2026 Zahra Chokri · El Jadida, Maroc</span>
+          <span style="font-family:var(--font-mono);color:var(--accent)">made with &lt;3</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-// Scroll reveal
-const revealEls = document.querySelectorAll('.reveal');
-const obs = new IntersectionObserver(entries => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
-}, { threshold: 0.12 });
-revealEls.forEach(el => obs.observe(el));
+  <script>
+    // Cursor
+    const cursor = document.getElementById('cursor');
+    const ring = document.getElementById('cursor-ring');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+    document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+    function animateCursor() {
+      cursor.style.transform = `translate(${mx - 4}px, ${my - 4}px)`;
+      rx += (mx - rx) * 0.15; ry += (my - ry) * 0.15;
+      ring.style.transform = `translate(${rx - 18}px, ${ry - 18}px)`;
+      requestAnimationFrame(animateCursor);
+    }
+    animateCursor();
+    document.querySelectorAll('a,button,.project-card,.skill-group').forEach(el => {
+      el.addEventListener('mouseenter', () => { ring.style.width = ring.style.height = '56px'; });
+      el.addEventListener('mouseleave', () => { ring.style.width = ring.style.height = '36px'; });
+    });
 
-// Nav active
-const sections = document.querySelectorAll('section[id]');
-const navLinks = document.querySelectorAll('.nav-links a');
-window.addEventListener('scroll', () => {
-  let current = '';
-  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.getAttribute('id'); });
-  navLinks.forEach(a => {
-    a.style.color = a.getAttribute('href') === '#' + current ? 'var(--accent2)' : '';
-  });
-});
-</script>
+    // Scroll reveal
+    const revealEls = document.querySelectorAll('.reveal');
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => obs.observe(el));
+
+    // Nav active
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.getAttribute('id'); });
+      navLinks.forEach(a => {
+        a.style.color = a.getAttribute('href') === '#' + current ? 'var(--accent2)' : '';
+      });
+    });
+  </script>
 </body>
+
 </html>
